@@ -1,0 +1,27 @@
+mixin map()
+  section.map
+    .container
+      .map__wrapper
+        .map__text-block
+          h2.map__title.title.title-2.mg-3-bottom Если поведение питомца изменилось, обратитесь к&nbsp;ветеринарному эксперту
+          p.map__description.paragraph.paragraph-1.paragraph-1-low После стерилизации кошке особенно нужна ваша забота, поэтому при малейших изменениях важно сразу&nbsp;же обратиться к&nbsp;ветеринарному эксперту. Выберите удобную для вас клинику, чтобы&nbsp;получить советы профессионалов.
+        .map__interactive-block(data-map-interactive-block)
+          .map__zoom-controls(data-zoom-controls)
+            button.map__zoom-btn(type="button", data-zoom-in, aria-label="Увеличить масштаб")
+            button.map__zoom-btn(type="button", data-zoom-out, aria-label="Уменьшить масштаб")
+          .map__bg
+            img(src="map-img/map-bg.jpg" srcset= "map-img/map-bg@2x.jpg 2x", width="688", height="491", alt="Карта")
+          .map__interactive-map(data-map-container)
+          .map__search(data-map-search)
+            .map__search-input(data-search-input)
+              .map__input-wrapper
+                label(for="map-search") Выберите город
+                input(type="search", name="cities-search", placeholder="Выберите город", id="map-search")
+                svg(width='22', height='22', viewBox='0 0 22 22', fill='none', xmlns='http://www.w3.org/2000/svg')
+                  path(fill-rule='evenodd', clip-rule='evenodd', d='M11.0001 7.36113L1.86119 16.5L0.888916 15.5277L11.0001 5.41659L21.1112 15.5277L20.1389 16.5L11.0001 7.36113Z', fill='white')
+              .map__search-list-block(data-search-list)
+            button.map__search-btn.btn.btn--gold.paragraph.paragraph-3.paragraph-3-caps(type="button", data-search-changer) Подтвердить
+          button.map__search-toggler(type="button", data-search-toggler)
+            | Изменить город
+            svg(width='8', height='8', viewBox='0 0 8 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+              path(fill-rule='evenodd', clip-rule='evenodd', d='M4.47578 0.159096L7.84494 3.61591C8.05169 3.82804 8.05169 4.17196 7.84494 4.38409L4.47578 7.8409C4.26904 8.05303 3.93383 8.05303 3.72708 7.8409C3.52033 7.62878 3.52033 7.28485 3.72708 7.07272L6.19248 4.54319H0L0 3.45681L6.19248 3.45681L3.72708 0.927276C3.52033 0.715149 3.52033 0.371223 3.72708 0.159096C3.93383 -0.0530318 4.26904 -0.0530318 4.47578 0.159096Z', fill='white')

@@ -1,0 +1,92 @@
+mixin choose()
+  section.choose.pd-10-top.pd-10-bottom(id="id-choose")
+    .choose__container(data-animate data-animate-height="90")
+      .choose__image.fi.d-200
+        +picture("content/choose", "cat-food", "png", 375, 295, "Изображение кошачих кормов", 1024, 768)
+      .choose__text-container.container
+        h2.choose__title.title.title-1.mg-2-bottom.fib-20.d-200!="Подберите рацион <br> для вашего питомца"
+        p.choose__text.paragraph.paragraph-1.paragraph-1-low.mg-6-bottom.fib-20.d-300 PRO PLAN® разработал питание для кошек разного возраста, учитывая их особенности и потребности. Ответьте #[br] на #[span!="два коротких вопроса"] и получите персональные рекомендации экспертов по рациону для вашего питомца.
+        .choose__buttons.fib-20.d-400
+          +btn({text: "подобрать рацион"})( aria-label="Перейти к подбору рациона").choose__button-choose.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-2-bottom
+          a(href="https://shop.purina.ru/koshki/suhie-korma/pro-plan/shopby/prn_seria-sterilised-sterilised_kitten" data-text="Посмотреть всю линейку" target="_blank" aria-label="Перейти на страницу линейки").choose__button-look.btn.btn--arrow.btn--arrow-right.paragraph.paragraph-3.paragraph-3-caps
+            span!="Посмотреть всю линейку"
+            span.btn__arrow.btn__arrow--right.btn__arrow--default
+              +icon("icon-arrow-right", 8, 8)
+            span.btn__arrow.btn__arrow--right.btn__arrow--gold
+              +icon("icon-arrow-right-gold", 8, 8)
+    .choose__quiz.container
+      .choose__quiz-container
+        button(type="button" aria-label="Вернуться назад на страницу" data-text="К началу").choose__button-back.btn.btn--arrow.btn--arrow-left.paragraph.paragraph-3.paragraph-3-caps
+          span.btn__arrow.btn__arrow--left.btn__arrow--default
+              +icon("icon-arrow-left", 8, 8)
+          span.btn__arrow.btn__arrow--left.btn__arrow--gold
+            +icon("icon-arrow-left-gold", 8, 8)
+          span!="К началу"
+        .choose__quiz-image
+          +picture("content/choose", "quiz-background", "png", 622, 536, "Изображение кошки")
+      .choose__questions-container
+        .choose__quiz-content.choose__quiz-content--first
+          .choose__question-count.paragraph.paragraph-3.paragraph-3-low.mg-0-bottom #[span.choose__question-current!="1"]/#[span.choose__question-last!="2"]
+          h3.choose__question.title.title-2.mg-3-bottom!="Укажите возраст вашего питомца"
+          .choose__inputs.choose__inputs--radio
+            .choose__input
+              h4.visually-hidden!="Котенок"
+              input(class="visually-hidden" type="radio" id="kitten" name="age" value="kitten")
+              label(for="kitten")!="Котенок"
+                span!="до 1 года"
+            .choose__input
+              h4.visually-hidden!="Взрослый"
+              input(class="visually-hidden" type="radio" id="adult" name="age" value="adult")
+              label(for="adult")!="Взрослый"
+                span!="1-7 лет"
+            .choose__input
+              h4.visually-hidden!="Взрослый 7+"
+              input(class="visually-hidden" type="radio" id="old" name="age" value="old")
+              label(for="old")!="Взрослый 7+"
+          .choose__quiz-buttons
+            +btn({text: "Следующий вопрос"}).choose__button-next.btn.btn--gold.paragraph.paragraph-3.paragraph-3-caps(aria-label="Перейти к следующему вопросу")
+        .choose__quiz-content.choose__quiz-content--second
+          .choose__question-count.paragraph.paragraph-3.paragraph-3-low.mg-0-bottom #[span.choose__question-current!="2"]/#[span.choose__question-last!="2"]
+          h3.choose__question.title.title-2.mg-3-bottom!="Укажите особые потребности в&nbsp;питании кошки"
+          .choose__inputs.choose__inputs--checkbox
+            .choose__input
+              h4.visually-hidden!="Поддержка здоровья почек"
+              input(class="visually-hidden" type="checkbox" id="kidney" name="needs" value="kidney")
+              label(for="kidney")!="Поддержка здоровья почек"
+                span.choose__input-check
+                  +icon("icon-choose-check", 12, 10)
+            .choose__input
+              h4.visually-hidden!="Поддержка здорового пищеварения"
+              input(class="visually-hidden" type="checkbox" id="digestion" name="needs" value="digestion")
+              label(for="digestion")!="Поддержка здорового пищеварения"
+                span.choose__input-check
+                  +icon("icon-choose-check", 12, 10)
+            .choose__input
+              h4.visually-hidden!="Привередливая в&nbsp;еде"
+              input(class="visually-hidden" type="checkbox" id="picky" name="needs" value="picky")
+              label(for="picky")!="Привередливая в&nbsp;еде"
+                span.choose__input-check
+                  +icon("icon-choose-check", 12, 10)
+            .choose__input
+              h4.visually-hidden!="Поддержка здоровья органов чувств"
+              input(class="visually-hidden" type="checkbox" id="sensory" name="needs" value="sensory")
+              label(for="sensory")!="Поддержка здоровья органов чувств"
+                span.choose__input-check
+                  +icon("icon-choose-check", 12, 10)
+            .choose__input
+              h4.visually-hidden!="Влажное питание"
+              input(class="visually-hidden" type="checkbox" id="wet" name="needs" value="wet")
+              label(for="wet")!="Влажное питание"
+                span.choose__input-check
+                  +icon("icon-choose-check", 12, 10)
+          .choose__quiz-buttons
+            +btn({text: "показать результат"}).choose__button-result.btn--gold.paragraph.paragraph-3.paragraph-3-caps(aria-label="Перейти к следующему вопросу")
+            span.choose__quiz-prompt.paragraph.paragraph-3.paragraph-3-low!="Вы можете выбрать несколько потребностей"
+        .choose__quiz-content.choose__quiz-content--result.swiper
+          .choose__result.mg-0-top.mg-1-bottom
+            span.choose__result-total.paragraph.paragraph-3.paragraph-3-caps вам подойдет #[span.choose__pagination-total] #[span.choose__rations]
+            .swiper-pagination.choose__pagination.paragraph.paragraph-3.paragraph-3-caps
+          .choose__swiper-wrapper.swiper-wrapper
+          .choose__pagination-buttons
+            .swiper-button-prev.choose__pagination-button.choose__pagination-button--prev
+            .swiper-button-next.choose__pagination-button.choose__pagination-button--next

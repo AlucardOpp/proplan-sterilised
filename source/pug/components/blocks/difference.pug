@@ -1,0 +1,20 @@
+mixin difference()
+  .difference.modal-check-list__container
+    p.modal-check-list__title.title.title-3.mg-4-bottom!="Чем кастрация отличается от&nbsp;стерилизации и&nbsp;как проходит операция"
+    ul.difference__list.definition-list.definition-list--border
+      li.definition-list__item
+        span.definition-list__title.paragraph.paragraph-1.paragraph-1-low.mg-0-bottom!="Кастрация"
+        p.definition-list__text.paragraph.paragraph-3.paragraph-3-low!="— это удаление репродуктивных органов у&nbsp;животных. <br> У&nbsp;самцов удаляются семенники, у&nbsp;кошек&nbsp;&mdash; яичники или яичники вместе с&nbsp;маткой."
+      li.definition-list__item
+        span.definition-list__title.paragraph.paragraph-1.paragraph-1-low.mg-0-bottom!="Стерилизация"
+        p.definition-list__text.paragraph.paragraph-3.paragraph-3-low!="При этой операции репродуктивные органы остаются на&nbsp;месте, но&nbsp;перестают функционировать. Для этого у&nbsp;котов перевязывают семенные канатики, а&nbsp;у&nbsp;кошек&nbsp;&mdash; рога матки."
+    p.modal-check-list__subtitle.paragraph.paragraph-1.paragraph-1-low.mg-1-bottom Как обычно #[span.modal-check-list__hidden.modal-check-list__hidden--mobile!="проводится"] #[span.modal-check-list__hidden.modal-check-list__hidden--tablet!="проходит"] операция?
+    ul.difference__list.definition-list
+      li.definition-list__item
+        span.definition-list__title.paragraph.paragraph-1.paragraph-1-low.mg-0-bottom!="Лапаротомия"
+        p.definition-list__text.paragraph.paragraph-3.paragraph-3-low!="— полноценная операция, когда брюшную полость разрезают по&nbsp;белой линии живота или сбоку."
+      li.definition-list__item
+        span.definition-list__title.paragraph.paragraph-1.paragraph-1-low.mg-0-bottom!="Лапароскопия"
+        p.definition-list__text.paragraph.paragraph-3.paragraph-3-low!="— более щадящая операция. Хирург делает несколько небольших надрезов брюшной стенки, через них вводит специальные инструменты."
+    .modal-check-list__btn-container
+      +btn({text: "скачать информацию в pdf", href: "#"})(download target="_blank" data-name="").modal-check-list__download-button.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-5-top.mg-2-bottom

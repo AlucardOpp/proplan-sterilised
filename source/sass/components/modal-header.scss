@@ -1,0 +1,84 @@
+.modal .modal-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-768 {
+    margin-bottom: 40px;
+  }
+
+  @include vp-1024 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @include vp-1600 {
+    margin-bottom: size(40px);
+  }
+}
+
+.modal-header__logo {
+  width: 98px;
+
+  @include vp-768 {
+    width: 122px;
+  }
+
+  @include vp-1600 {
+    width: size(122px);
+  }
+}
+
+.modal-header__close-button.modal__close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid $color-silver;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity $trans-default;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 1px;
+    background-color: $color-silver;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  @include vp-1600 {
+    width: size(32px);
+    height: size(32px);
+    border-width: size(1px);
+
+    &::before,
+    &::after {
+      width: size(14px);
+      height: size(1px);
+    }
+  }
+}

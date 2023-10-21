@@ -1,0 +1,45 @@
+doctype html
+
+include ../components
+
+block variables
+
+html(lang="ru")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    meta(name="description" content="Получите исчерпывающую информацию о стерилизации кошки от ветеринарных экспертов Proplan – о важности процедуры, о подготовке к ней питомца и уходе после операции.")
+    meta(property="og:image" content="img/content/og-pic.jpg")
+    //- генерируйте favicon тут - https://realfavicongenerator.net/
+    //- в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"
+
+    //- используйте только для шрифта находящегося на первом экране
+    //- link(rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous")
+
+    link(rel="preload" href="fonts/AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous")
+    link(rel="preload" href="fonts/AvenirNextCyr-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous")
+
+    link(rel="stylesheet" href="css/style.min.css")
+    //- Google Tag Manager
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W69D2P');</script>
+    //- End Google Tag Manager
+  body
+    //- Google Tag Manager (noscript)
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W69D2P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    //- End Google Tag Manager (noscript)
+    +sprite()
+    .wrapper(class=wrapperMods)
+      if (hasHeader)
+        +header(headerMods, currentPage)
+
+      block main
+
+      if (hasFooter)
+        +footer(footerMods)
+
+    block modals
+
+    script(src="js/vendor.min.js")
+    script(src="js/main.min.js")

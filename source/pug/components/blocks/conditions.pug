@@ -1,0 +1,33 @@
+mixin conditions()
+  .conditions.modal-check-list__container
+    p.conditions__title.modal-check-list__title.title.title-3.mg-4-bottom!="Какие условия нужны кошке <br> после операции"
+    .modal-check-list__markers
+      ul.conditions__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Не&nbsp;забудьте переноску, чтобы отвезти питомца <br> из&nbsp;клиники домой."
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Ему должно быть тепло&nbsp;&mdash; после операции он&nbsp;временно может плохо поддерживать температуру тела."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.conditions__br.marker-list__term.marker-list__term--small-limitation!="Кошки должны жить в&nbsp;помещении, где <br> будет сухо, чисто и&nbsp;тепло."
+          p.marker-list__text.mg-0-top!="Если ваш питомец свободно выходит на&nbsp;улицу, до&nbsp;снятия швов лучше ограничить его в&nbsp;движении."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term.marker-list__term--big-limitation!="Не&nbsp;давайте кошке активно двигаться <br> и&nbsp;запрыгивать на&nbsp;высоту."
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="В&nbsp;день после операции питомцу опычно сложно координировать свои движения и&nbsp;он&nbsp;может упасть."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+      ul.conditions__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Дома кошке нужен привычный любимый корм, вода и&nbsp;чистый туалетный лоток."
+          p.marker-list__text.mg-0-top!="Первый прием пищи лучше ограничить половиной порции, чтобы не&nbsp;вызвать рвоту от&nbsp;переедания."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Не&nbsp;пытайтесь заставить питомца поесть."
+          p.marker-list__text.mg-0-top!="Лучше дождитесь, когда он&nbsp;сам проголодается.В первые сутки <br> снижение аппетита&nbsp;&mdash; это нормально."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+    .modal-check-list__btn-container
+      +btn({text: "скачать информацию в pdf", href: "#"})(download target="_blank" data-name="").conditions__button.modal-check-list__download-button.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-5-top.mg-2-bottom

@@ -1,0 +1,42 @@
+.examination__advice {
+  background-image: $gold-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include vp-1024 {
+    max-width: 488px;
+    margin-left: auto;
+    margin-right: 24px;
+  }
+
+  @include vp-1600 {
+    max-width: size(488px);
+    margin-right: size(24px);
+  }
+}
+
+.examination {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & .marker-list__term {
+    & br {
+      @include vp-1024 {
+        display: none;
+      }
+    }
+
+    &--small-limitation {
+      padding-right: 3px;
+
+      @include vp-1024 {
+        padding-right: 40px;
+      }
+
+      @include vp-1600 {
+        padding-right: size(40px);
+      }
+    }
+  }
+}

@@ -1,0 +1,451 @@
+[data-animate] {
+  // fade-in
+  .fi,
+  &.fi {
+    opacity: 0;
+  }
+
+  &.fi-all {
+    opacity: 0;
+  }
+
+  // fade-in-bottom-20px
+  .fib-20,
+  &.fib20 {
+    transform: translateY(20px);
+    opacity: 0;
+
+    @include vp-1600 {
+      transform: translateY(size(20px));
+    }
+  }
+
+  // fade-in-bottom-20px with opacity 0.7
+  .fib-20-op,
+  &.fib20-op {
+    transform: translateY(20px);
+    opacity: 0;
+
+    @include vp-1600 {
+      transform: translateY(size(20px));
+    }
+  }
+
+  // fade-in-bottom-40px
+  .fib-40,
+  &.fib-40 {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  // fade-in-bottom-60px
+  &.fib-60,
+  .fib-60 {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+
+  // fade-in-bottom-80px
+  &.fib-80,
+  .fib-80 {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  // fade-in-top-60px
+  .fit-60 {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+
+  // fade-in-top-40px
+  .fit-40 {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  // fade-in-left-60px
+  .fil-60 {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+
+  // fade-in-right-60px
+  .fir-60 {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+
+  // width-in
+  .wi {
+    width: 0;
+  }
+
+  // move-in-top-100
+  .mit-100 {
+    transform: translateY(-100%);
+  }
+
+  // move-in-top-100
+  .fit-100 {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  // move-in-left-100
+  .mil-100 {
+    transform: translateX(-100%);
+  }
+
+  // move-in-right-100
+  .mir-100 {
+    transform: translateX(100%);
+  }
+
+  // scale-in
+  .si-b {
+    @include vp-1440 {
+      &::before {
+        opacity: 0;
+        transform: scale(2);
+      }
+    }
+  }
+
+  // scale-grow-up-09
+  .sgu-05 {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  // grow-bottom
+  .gb-a {
+    @include vp-1440 {
+      &::after {
+        opacity: 0;
+        bottom: 100%;
+      }
+    }
+  }
+
+  &.d-50,
+  .d-50 {
+    animation-delay: 0.05s;
+  }
+
+  &.d-100,
+  .d-100 {
+    animation-delay: 0.1s;
+  }
+
+  &.d-150,
+  .d-150 {
+    animation-delay: 0.15s;
+  }
+
+  &.d-200,
+  .d-200 {
+    animation-delay: 0.2s;
+  }
+
+  &.d-250,
+  .d-250 {
+    animation-delay: 0.25s;
+  }
+
+  &.d-300,
+  .d-300 {
+    animation-delay: 0.3s;
+  }
+
+  &.d-350,
+  .d-350 {
+    animation-delay: 0.35s;
+  }
+
+  &.d-400,
+  .d-400 {
+    animation-delay: 0.4s;
+  }
+
+  .d-500 {
+    animation-delay: 0.3s;
+  }
+
+  &.d-600,
+  .d-600 {
+    animation-delay: 0.6s;
+
+    &::before,
+    &::after {
+      animation-delay: 0.6s;
+    }
+  }
+
+  &.d-700,
+  .d-700 {
+    animation-delay: 0.7s;
+
+    &::before,
+    &::after {
+      animation-delay: 0.7s;
+    }
+  }
+
+  .d-800 {
+    animation-delay: 0.8s;
+
+    &::before,
+    &::after {
+      animation-delay: 0.8s;
+    }
+  }
+
+  &.d-900,
+  .d-900 {
+    animation-delay: 0.9s;
+
+    &::before,
+    &::after {
+      animation-delay: 0.9s;
+    }
+  }
+
+  .d-1000 {
+    animation-delay: 1s;
+
+    &::before,
+    &::after {
+      animation-delay: 1s;
+    }
+  }
+
+  .d-1200 {
+    animation-delay: 1.2s;
+
+    &::before,
+    &::after {
+      animation-delay: 1.2s;
+    }
+  }
+
+  .d-1400 {
+    animation-delay: 1.4s;
+
+    &::before,
+    &::after {
+      animation-delay: 1.4s;
+    }
+  }
+
+  .d-1600 {
+    animation-delay: 1.6s;
+
+    &::before,
+    &::after {
+      animation-delay: 1.6s;
+    }
+  }
+
+  .d-1800 {
+    animation-delay: 1.8s;
+  }
+
+  .d-2000 {
+    animation-delay: 2s;
+  }
+
+  .du-1500 {
+    animation-duration: 1.5s;
+  }
+
+  &.show {
+    &.fib-20,
+    .fib-20 {
+      transform: translateY(20px);
+      opacity: 0;
+
+      animation-name: fade-in-bottom-20px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+
+
+      @include vp-1600 {
+        transform: translateY(size(20px));
+      }
+    }
+
+    &.fib-20-op,
+    .fib-20-op {
+      transform: translateY(20px);
+      opacity: 0;
+
+      animation-name: fade-in-bottom-20px-opacity;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+
+
+      @include vp-1600 {
+        transform: translateY(size(20px));
+      }
+    }
+
+    &.fib-40,
+    .fib-40 {
+      transform: translateX(40px);
+      opacity: 0;
+
+      animation-name: fade-in-bottom-40px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    &.fib-60,
+    .fib-60 {
+      transform: translateX(60px);
+      opacity: 0;
+
+      animation-name: fade-in-bottom-60px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    &.fib-80,
+    .fib-80 {
+      transform: translateX(80px);
+      opacity: 0;
+
+      animation-name: fade-in-bottom-60px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .fit-60 {
+      animation-name: fade-in-top-60px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .fit-40 {
+      animation-name: fade-in-top-40px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .fil-60 {
+      animation-name: fade-in-left-60px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .fir-60 {
+      animation-name: fade-in-right-60px;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .fit-100 {
+      animation-name: fade-in-top-100;
+      animation-duration: 0.6s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .fi,
+    &.fi {
+      animation-name: fade-in;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    &.fi-all {
+      transition: opacity $trans-600, transform $trans-600;
+      opacity: 1;
+    }
+
+    .wi {
+      animation-name: width-in;
+      animation-duration: 0.6s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .mit-100 {
+      animation-name: move-in-top-100;
+      animation-duration: 0.6s;
+      animation-timing-function: $trans-default;
+
+      animation-fill-mode: both;
+    }
+
+    .mil-100 {
+      animation-name: move-in-left-100;
+      animation-duration: 0.6s;
+      animation-timing-function: $trans-default;
+
+      animation-fill-mode: both;
+    }
+
+    .mir-100 {
+      animation-name: move-in-right-100;
+      animation-duration: 0.6s;
+      animation-timing-function: $trans-default;
+
+      animation-fill-mode: both;
+    }
+
+    .si-b {
+      &::before {
+        @include vp-1440 {
+          animation-name: scale-in;
+          animation-duration: 0.4s;
+          animation-timing-function: ease-in-out;
+
+          animation-fill-mode: both;
+        }
+      }
+    }
+
+    .sgu-05 {
+      animation-name: scale-grow-up-05;
+      animation-duration: 0.5s;
+      animation-timing-function: $trans-default;
+
+      animation-fill-mode: both;
+    }
+
+    .gb-a {
+      &::after {
+        @include vp-1440 {
+          animation-name: grow-bottom;
+          animation-duration: 0.6s;
+          animation-timing-function: ease-in-out;
+
+          animation-fill-mode: both;
+        }
+      }
+    }
+  }
+}

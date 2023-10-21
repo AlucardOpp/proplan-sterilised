@@ -1,0 +1,466 @@
+.main-nav {
+  min-height: 50px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include vp-1024 {
+    min-height: 72px;
+  }
+
+  @include vp-1600 {
+    min-height: size(73px);
+  }
+
+  &__wrapper {
+    width: 100%;
+
+    @include vp-1024 {
+      width: fit-content;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3000;
+    background: $color-default-black;
+
+    overflow: auto;
+    padding: 50px 24px;
+    padding-top: 57px;
+
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path $trans-600;
+
+    @include vp-1024 {
+      clip-path: inset(0 0 0 0);
+      height: auto;
+      padding: 0;
+      position: relative;
+      top: 0;
+      overflow: hidden;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    background-color: $color-default-black;
+    margin-bottom: 43px;
+
+    @include vp-1024 {
+      flex-direction: row;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include vp-1024 {
+      margin-right: 28px;
+      margin-bottom: 0;
+      width: auto;
+    }
+
+    @include vp-1280 {
+      margin-right: 40px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(40px);
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: $color-default-white;
+    user-select: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: $gold-gradient;
+      bottom: -8px;
+      opacity: 0;
+      transition: opacity $trans-default;
+      pointer-events: none;
+
+      @include vp-1600 {
+        height: size(1px);
+        bottom: size(-8px);
+      }
+    }
+
+    @include vp-1024 {
+      background-color: inherit;
+      border: 0 solid transparent;
+      border-radius: 100px;
+      font-size: 12px;
+    }
+
+    @include vp-1280 {
+      font-size: 14px;
+    }
+
+    @include vp-1600 {
+      font-size: size(14px);
+      border-radius: size(100px);
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__mobile-active {
+    position: absolute;
+    top: 13px;
+    right: 81px;
+    opacity: 1;
+    transition: opacity $trans-default;
+
+    @include vp-768 {
+      top: 22px;
+      right: 105px;
+      font-size: 14px;
+    }
+
+    @include vp-1024 {
+      top: 13px;
+      right: 81px;
+      display: none;
+    }
+
+    .main-nav__link {
+      font-size: 12px;
+
+      @include vp-768 {
+        font-size: 14px;
+      }
+
+      @include vp-1024 {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__item--active {
+    color: $color-default-white;
+    background: $color-default-black;
+    background-clip: padding-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 100px;
+
+    top: 0;
+    right: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: -2px;
+      border-radius: 100px;
+      background-image: $gold-gradient;
+
+      @include vp-1600 {
+        margin: size(-2px);
+        border-radius: size(100px);
+      }
+    }
+
+    .main-nav__link {
+      width: 100%;
+      padding: 15px 22px;
+
+      background-color: inherit;
+      border: 0 solid transparent;
+      border-radius: 100px;
+
+      color: $color-default-white;
+      background-color: $color-default-black;
+      transition-property: color background-color;
+      transition: $trans-default;
+
+      @include vp-1024 {
+        padding: 13px 22px;
+      }
+
+      @include vp-1600 {
+        padding: size(13px) size(22px);
+        border-radius: size(100px);
+      }
+
+      &::before {
+        display: none;
+      }
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          color: $color-default-black;
+          background-color: transparent;
+        }
+      }
+    }
+
+    @include vp-1280 {
+      .main-nav__link {
+        padding: 11px 20px;
+        padding-left: 24px;
+      }
+    }
+
+    @include vp-1600 {
+      .main-nav__link {
+        padding: size(11px) size(20px);
+        padding-left: size(24px);
+      }
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    padding: 0;
+    background-color: $color-transparent;
+    cursor: pointer;
+
+    @include vp-768 {
+      top: 20px;
+      right: 40px;
+    }
+
+    @include vp-1024 {
+      top: 12px;
+      right: 24px;
+      display: none;
+    }
+
+    svg {
+      fill: none;
+      border-radius: 50%;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+
+    @include vp-1024 {
+      display: none;
+    }
+  }
+
+  &__socials {
+    max-width: 180px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+
+    @include vp-1024 {
+      margin: 0;
+    }
+  }
+
+  &__socials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__socials-item {
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-default-white;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity $trans-default;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 1;
+        & svg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__socials-link {
+    display: block;
+
+    svg {
+      display: block;
+      color: $color-default-white;
+      opacity: 0.5;
+      transition: opacity $trans-default;
+    }
+  }
+
+  &__contacts {
+    background: $color-nero;
+    padding: 32px;
+    padding-bottom: 28px;
+  }
+
+  &__contacts-header {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-default-white;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+
+  &__contacts-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-default-white;
+    opacity: 0.5;
+    margin: 0;
+    padding-bottom: 30px;
+    max-width: 395px;
+  }
+
+  &__contacts-list {
+    list-style: none;
+    padding: 0;
+    padding-left: 16px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contacts-item {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 6px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: $color-default-white;
+      top: 5px;
+      left: -16px;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: $color-default-white;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__contacts-link {
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-default-white;
+  }
+
+  &.active {
+    .main-nav__toggle svg {
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
+    }
+
+    .main-nav__mobile-active {
+      opacity: 0;
+    }
+
+    .main-nav__items {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+}

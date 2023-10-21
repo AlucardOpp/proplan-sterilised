@@ -1,0 +1,26 @@
+mixin guide()
+  section.guide.mg-8-bottom.fi(data-accordion="parent" data-single data-animate data-animate-height="90" id="id-more" data-target="#")
+    .container
+      each item in guide
+        .guide__step(class=(item.active === "yes") ? "is-active" : "", class=(item.slides.length === 1) ? "guide__step--one" : "", class=(item.slides[0].image === "guide-step-3-slide-1-image") ? "guide__step--five" : "", data-accordion="element")
+          .guide__step-content(data-accordion="content")
+            .guide__swiper.swiper
+              h2.guide__step-title.paragraph.paragraph-3.paragraph-3-caps.fib-20.d-200
+                span.guide__step-title-text!=item.title
+              .swiper-wrapper
+                each slide in item.slides
+                  .guide__container.pd-6-top.pd-6-bottom.swiper-slide
+                    .guide__image
+                      +picture("content/guide", `${slide.image}`, "jpg", 327, 628, slide.imageAlt, 1024, 768)
+                    .guide__content(class=(item.slides.length === 1) ? "guide__content--one" : "")
+                      .container
+                        .guide__text-content.fib-20.d-250
+                          h3.guide__name.mg-2-bottom.title.title-1!=slide.name
+                          p.guide__text.mg-3-bottom.paragraph.paragraph-1.paragraph-1-low!=slide.text
+                        .guide__buttons.fib-20.d-300(class=(item.slides.length === 1) ? "guide__buttons--one" : "")
+                          each button in slide.buttons
+                            +btn-with-img(button, "guide").guide__button(data-open-modal=(button.btnModal) ? button.btnModal : "", class=`btn-with-img--${button.btnClass}`, data-video=(button.btnModal === 'video') ? button.btnVideoLink : "", data-name=(button.btnVideoTitle) ? button.btnVideoTitle : "", data-mobilepdf=(button.btnPdfMobileLink) ? button.btnPdfMobileLink : "", data-desktoppdf=(button.btnPdfDesktopLink) ? button.btnPdfDesktopLink : "")
+              .swiper-controls.guide__controls.fib-20.d-300
+                .swiper-button-prev.guide__pagination-button.guide__pagination-button--prev
+                .swiper-pagination.guide__pagination
+                .swiper-button-next.guide__pagination-button.guide__pagination-button--next

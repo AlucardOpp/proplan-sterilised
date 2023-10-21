@@ -1,0 +1,9 @@
+mixin btn-with-img(data, folder)
+  button.btn.btn-with-img.mg-0-bottom&attributes(attributes)
+    span.btn-with-img__container
+      if data.btnImage
+        span.btn-with-img__image
+            +picture((folder) ? `content/${folder}` : "content", data.btnImage, "png", 88, 88, data.btnImageAlt)
+      span.btn-with-img__svg
+        +icon(data.btnIcon, 16, 16)
+    span.btn-with-img__text.paragraph.paragraph-3.paragraph-3-caps!=data.btnText

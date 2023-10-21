@@ -1,0 +1,270 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  background-color: rgba($color-default-black, 0.8);
+  transform: scale(1.2);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity $trans-modal,
+    transform $trans-modal,
+    visibility $trans-modal;
+
+  pointer-events: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 60px 40px;
+
+    @include vp-768 {
+      padding: 60px 16px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+  }
+
+  &__content {
+    position: relative;
+
+    width: 600px;
+    padding: 40px;
+
+    background-color: $color-default-white;
+
+    @include vp-768 {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    z-index: 1;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    background: $color-transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &--responsive {
+    .modal__content {
+      width: 100%;
+    }
+  }
+
+  &--fit-content {
+    .modal__content {
+      width: auto;
+
+      @include vp-768 {
+        width: 100%;
+      }
+    }
+  }
+
+  &--no-scale {
+    transform: none;
+  }
+
+  &--preload {
+    transition: none;
+  }
+
+  &.is-active {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+
+    pointer-events: auto;
+  }
+
+  &--video {
+    background-color: $color-default-black;
+    z-index: 3000;
+    opacity: 1;
+    transform: translateX(100%);
+
+    &.is-active {
+      transform: translateX(0);
+
+      & .modal__content {
+        transform: translateX(0);
+      }
+    }
+
+    & .modal__overlay {
+      cursor: default;
+    }
+
+    & .modal__wrapper {
+      padding: 76px 0;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    & .modal__content {
+      width: calc(100% - 40px);
+      height: auto;
+      display: flex;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-default-black;
+      transition: transform $trans-default;
+      transform: translateX(100%);
+    }
+
+    & .modal__close-btn {
+      width: 36px;
+      height: 36px;
+      right: 0px;
+      top: -18px;
+      transition: opacity $trans-default;
+
+      & svg {
+        width: 36px;
+        height: 36px;
+      }
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    @include vp-375 {
+      & .modal__content {
+        width: calc(100% - 48px);
+      }
+    }
+
+    @include vp-1024 {
+      & .modal__wrapper {
+        padding: 92px 0;
+      }
+
+      & .modal__content {
+        width: fit-content;
+      }
+
+      & .modal__close-btn {
+        width: 56px;
+        height: 56px;
+        right: -96px;
+        top: 0;
+
+        & svg {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+
+    @include vp-1600 {
+      & .modal__wrapper {
+        padding: size(92px) 0;
+      }
+
+      & .modal__close-btn {
+        width: size(56px);
+        height: size(56px);
+        right: size(-96px);
+        top: size(0px);
+
+        & svg {
+          width: size(56px);
+          height: size(56px);
+        }
+      }
+    }
+  }
+
+  &--check-list {
+    z-index: 3001;
+    background-color: rgba($color-nero, 0.7);
+
+    & .modal__overlay {
+      cursor: default;
+    }
+
+    & .modal__wrapper {
+      padding: 0;
+
+      @include vp-768 {
+        padding: 72px 40px;
+      }
+
+      @include vp-1024 {
+        padding: 72px 36px;
+      }
+
+      @include vp-1440 {
+        padding: 72px 80px;
+      }
+
+      @include vp-1600 {
+        padding: size(72px) size(80px);
+      }
+    }
+
+    & .modal__content {
+      height: 100%;
+      width: 100%;
+      background-color: $color-default-black;
+
+      @include vp-768 {
+        padding: 24px;
+        height: auto;
+      }
+
+      @include vp-1024 {
+        padding: 32px;
+      }
+
+      @include vp-1600 {
+        padding: size(32px);
+      }
+    }
+  }
+}

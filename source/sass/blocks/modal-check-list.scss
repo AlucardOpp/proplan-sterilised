@@ -1,0 +1,166 @@
+.modal-check-list {
+  min-height: 624px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  position: relative;
+
+  @include vp-768 {
+    min-height: 832px;
+  }
+
+  @include vp-1024 {
+    min-height: auto;
+    display: block;
+  }
+}
+
+.modal-check-list__hidden {
+  &--mob {
+    display: none;
+
+    @include vp-768 {
+      display: inline;
+      vertical-align: baseline;
+    }
+  }
+
+  &--tablet {
+    @include vp-768 {
+      display: none;
+    }
+  }
+}
+
+.modal-check-list__container {
+  @include vp-1024 {
+    padding: 0 78px;
+  }
+
+  @include vp-1600 {
+    padding: 0 size(78px);
+  }
+}
+
+.modal-check-list__title,
+.modal-check-list__subtitle {
+  color: $color-default-white
+}
+
+.modal-check-list .modal-check-list__title {
+  & br {
+    display: none;
+  }
+
+  @include vp-768 {
+    margin-bottom: 40px;
+
+    & br {
+      display: inline;
+      vertical-align: baseline;
+    }
+  }
+
+  @include vp-1024 {
+    text-align: center;
+    max-width: 498px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include vp-1600 {
+    margin-bottom: size(40px);
+    max-width: size(498px);
+  }
+}
+
+.modal-check-list__download-button {
+  max-width: 254px;
+  margin: 0 auto;
+  justify-self: flex-end;
+
+  @include vp-768 {
+    max-width: 282px;
+    margin-bottom: 24px;
+  }
+
+  @include vp-1600 {
+    max-width: size(282px);
+  }
+}
+
+.modal-check-list__btn-container {
+  margin-top: auto;
+
+  @include vp-1024 {
+    margin-top: 0;
+  }
+}
+
+
+.modal-check-list__markers {
+  & .marker-list {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  & .marker-list--text {
+    margin-bottom: 16px;
+  }
+
+  @include vp-768 {
+    & .marker-list {
+      margin-bottom: 16px;
+    }
+
+    & .marker-list--text {
+      margin-bottom: 24px;
+    }
+
+    &--dots {
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+
+      & .marker-list {
+        row-gap: 8px;
+      }
+    }
+  }
+
+  @include vp-1024 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 36px;
+
+    & .marker-list {
+      margin-bottom: 0;
+    }
+
+    & .marker-list--text {
+      margin-bottom: 0;
+    }
+
+    &--rows {
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+    }
+  }
+
+  @include vp-1600 {
+    column-gap: size(36px);
+
+    &--dots {
+      & .marker-list {
+        row-gap: size(8px);
+      }
+    }
+
+    &--rows {
+      row-gap: size(24px);
+    }
+  }
+}

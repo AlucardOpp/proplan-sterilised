@@ -1,0 +1,40 @@
+mixin select()
+  .select.modal-check-list__container
+    p.select__title.modal-check-list__title.title.title-3.mg-4-bottom!="Как подобрать правильный корм"
+    p.select__text.paragraph.paragraph-1.paragraph-1-low.mg-0-bottom!="Благодаря специальным оптикомплексам в&nbsp;составе рационов PRO PLAN®, вы&nbsp;можете подобрать корм, который будет учитывать потребности именно вашего питомца:"
+    .modal-check-list__markers
+      ul.select__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Рацион для котят с&nbsp;молозивом"
+          p.marker-list__text.mg-0-top!="укрепляет иммунитет;"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Корм с&nbsp;аминокислотой аргинин"
+          p.marker-list__text.mg-0-top!="Создан для поддержания здоровья почек;"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Рацион с&nbsp;отобранными источниками белка и&nbsp;пребиотиком"
+          p.marker-list__text.mg-0-top!="Для питомцев с&nbsp;чувствительным пищеварением;"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Корм с&nbsp;высокой вкусовой привлекательностью"
+          p.marker-list__text.mg-0-top!="Для привередливых в&nbsp;еде кошек;"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+      ul.select__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Формула Optisenses"
+          p.marker-list__text.mg-0-top!="Поддерживает жизненно важные органы чувств кошек и&nbsp;когнитивные функции;"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Рацион с&nbsp;комплексом Longevis для кошек старше семи лет"
+          p.marker-list__text.mg-0-top!="доказано увеличивает продолжительность и&nbsp;качество жизни."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+    .modal-check-list__btn-container
+      +btn({text: "скачать информацию в pdf", href: "#"})(download target="_blank" data-name="").modal-check-list__download-button.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-5-top.mg-2-bottom
+

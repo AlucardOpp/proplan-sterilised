@@ -1,0 +1,25 @@
+.map-iframe {
+  padding: 64px 0 0 0;
+
+  @include vp-768 {
+    padding: 16px 0 53px 0;
+  }
+
+  @include vp-1024 {
+    padding: size(64px) 0 size(87px) 0;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 800px;
+    border: none;
+
+    @include vp-768 {
+      min-height: 780px;
+    }
+
+    @include vp-1024 {
+      min-height: size(544px);
+    }
+  }
+}

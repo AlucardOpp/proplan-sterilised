@@ -1,0 +1,201 @@
+.btn {
+  display: inline-flex;
+  margin: 10px 0;
+  padding: 10px 20px;
+  -webkit-tap-highlight-color: transparent;
+  color: $color-default-white;
+
+  background-color: $color-neon-blue;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &--gold {
+    position: relative;
+    display: flex;
+    padding: 19px 32px;
+    margin: 0;
+    background: $gold-gradient;
+    color: $color-default-black;
+    border-radius: 100px;
+    transition: box-shadow $trans-default;
+    white-space: nowrap;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 5px;
+      bottom: 5px;
+      right: 5px;
+      z-index: -1;
+      background: inherit;
+      background-size: 300%;
+      border-radius: 100px;
+      opacity: 0;
+      transition: 0.5s;
+      filter: blur(20px);
+      transform: translateZ(0);
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover  {
+        animation-name: fade-in;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+
+        &:before {
+          opacity: 1;
+          animation: glow 8s linear infinite;
+        }
+      }
+    }
+
+    @include vp-1600 {
+      border-radius: size(100px);
+      padding: size(19px) size(32px);
+
+      &::before {
+        top: size(5px);
+        left: size(5px);
+        bottom: size(5px);
+        right: size(5px);
+        border-radius: size(100px);
+        filter: blur(size(20px));
+      }
+    }
+  }
+
+  &--arrow {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+    padding: 7px 0;
+    background-color: $color-transparent;
+
+    & span {
+      transition: opacity $trans-default;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      content:attr(data-text);
+      background-image: $gold-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: $color-transparent;
+      background-position: right;
+      transition: opacity $trans-default;
+      opacity: 0;
+    }
+
+    & svg {
+      width: 8px;
+      height: 8px;
+      fill: $color-default-white;
+    }
+
+    & .btn__arrow {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      transition: opacity $trans-default;
+
+      &--right {
+        right: 0;
+
+        &::before {
+          right: 0;
+        }
+      }
+
+      &--left {
+        left: 0;
+
+        &::before {
+          left: 0;
+        }
+      }
+
+      &--gold {
+        opacity: 0;
+      }
+    }
+
+    &.btn--arrow-left {
+      padding-left: 16px;
+    }
+
+    &.btn--arrow-right {
+      padding-right: 16px;
+    }
+
+    @include vp-1024 {
+      padding: 19px 0;
+    }
+
+    @include vp-1600 {
+      padding: size(19px) 0;
+
+      & svg {
+        width: size(8px);
+        height: size(8px);
+      }
+
+      &.btn--arrow-left {
+        padding-left: size(16px);
+      }
+
+      &.btn--arrow-right {
+        padding-right: size(16px);
+      }
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 1;
+
+        & span {
+          opacity: 0;
+        }
+
+        &::before {
+          opacity: 1;
+        }
+
+        & .btn__arrow {
+          &--default {
+            opacity: 0;
+          }
+
+          &--gold {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

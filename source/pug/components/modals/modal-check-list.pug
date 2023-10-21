@@ -1,0 +1,12 @@
+mixin modal-check-list(mods)
+  .modal.modal--preload(class=mods)&attributes(attributes)
+      .modal__wrapper
+        .modal__overlay(data-close-modal)
+        .modal__content.pd-3-top.pd-3-right.pd-3-bottom.pd-3-left
+          .modal-check-list
+            .modal-header.mg-4-bottom
+              .modal-header__logo
+                +picture("content", "header-logo", "png", 122, 48, "Purina Pro Plan")
+              button.modal-header__close-button.modal__close-btn(type="button", aria-label="Закрыть попап", data-close-modal)
+            if block
+              block

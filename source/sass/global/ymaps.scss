@@ -1,0 +1,15 @@
+.map__interactive-map {
+  [class*="ymaps-2-1"][class*="-ground-pane"],
+  [class*="ymaps-2-1"][class*="-control-popup"],
+  [class*="ymaps-2-1"][class*="-route-pin"],
+  [class*="ymaps-2-1"][class*="-graphics-canvas"],
+  [class*="ymaps-2-1"][class*="-gotoymaps"] {
+    filter: invert(100%) hue-rotate(180deg) !important;
+  }
+
+  [class*="ymaps-2-1"][class*="-gotoymaps__container"],
+  [class*="ymaps-2-1"][class*="-map-copyrights-promo"],
+  [class*="ymaps-2-1"][class*="-copyright__wrap"] {
+    display: none !important;
+  }
+}

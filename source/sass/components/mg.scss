@@ -1,0 +1,597 @@
+.mg {
+  &-0-bottom {
+    margin-bottom: 8px;
+
+    @include vp-1600 {
+      margin-bottom: size(8px);
+    }
+  }
+
+  &-1-bottom {
+    margin-bottom: 8px;
+
+    @include vp-768 {
+      margin-bottom: 16px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(16px);
+    }
+  }
+
+  &-2-bottom {
+    margin-bottom: 16px;
+
+    // @include vp-768 {
+    //   margin-bottom: 18px;
+    // }
+
+    @include vp-1600 {
+      margin-bottom: size(24px);
+    }
+  }
+
+  &-3-bottom {
+    margin-bottom: 24px;
+
+    @include vp-1024 {
+      margin-bottom: 24px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(32px);
+    }
+  }
+
+  &-4-bottom {
+    margin-bottom: 32px;
+
+    @include vp-768 {
+      margin-bottom: 0;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(40px);
+    }
+  }
+
+  &-5-bottom {
+    margin-bottom: 32px;
+
+    @include vp-768 {
+      margin-bottom: 54px;
+    }
+
+    @include vp-1024 {
+      margin-bottom: 48px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(48px);
+    }
+  }
+
+  &-6-bottom {
+    margin-bottom: 24px;
+
+    @include vp-768 {
+      margin-bottom: 23px;
+    }
+
+    @include vp-1024 {
+      margin-bottom: 64px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(64px);
+    }
+  }
+
+  &-7-bottom {
+    margin-bottom: 32px;
+
+    @include vp-768 {
+      margin-bottom: 56px;
+    }
+
+    @include vp-1024 {
+      margin-bottom: 88px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(88px);
+    }
+  }
+
+  &-8-bottom {
+    margin-bottom: 64px;
+
+    @include vp-1024 {
+      margin-bottom: 88px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(88px);
+    }
+  }
+
+  &-9-bottom {
+    margin-bottom: 64px;
+
+    @include vp-768 {
+      margin-bottom: 80px;
+    }
+
+    @include vp-1024 {
+      margin-bottom: 104px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(104px);
+    }
+  }
+
+  &-10-bottom {
+    margin-bottom: 64px;
+
+    @include vp-768 {
+      margin-bottom: 112px;
+    }
+
+    @include vp-1024 {
+      margin-bottom: 144px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(144px);
+    }
+  }
+
+  &-0-top {
+    margin-top: 8px;
+
+    @include vp-768 {
+      margin-top: 0;
+    }
+
+    @include vp-1600 {
+      margin-top: size(8px);
+    }
+  }
+
+  &-1-top {
+    margin-top: 8px;
+
+    @include vp-768 {
+      margin-top: 16px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(16px);
+    }
+  }
+
+  &-2-top {
+    margin-top: 16px;
+
+    @include vp-768 {
+      margin-top: 24px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(24px);
+    }
+  }
+
+  &-3-top {
+    margin-top: 24px;
+
+    @include vp-1024 {
+      margin-top: 32px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(32px);
+    }
+  }
+
+  &-4-top {
+    margin-top: 32px;
+
+    @include vp-768 {
+      margin-top: 40px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(40px);
+    }
+  }
+
+  &-5-top {
+    margin-top: 32px;
+
+    @include vp-768 {
+      margin-top: 40px;
+    }
+
+    @include vp-1024 {
+      margin-top: 48px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(48px);
+    }
+  }
+
+  &-6-top {
+    margin-top: 24px;
+
+    @include vp-768 {
+      margin-top: 40px;
+    }
+
+    @include vp-1024 {
+      margin-top: 64px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(64px);
+    }
+  }
+
+  &-7-top {
+    margin-top: 32px;
+
+    @include vp-768 {
+      margin-top: 56px;
+    }
+
+    @include vp-1024 {
+      margin-top: 88px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(88px);
+    }
+  }
+
+  &-8-top {
+    margin-top: 64px;
+
+    @include vp-1024 {
+      margin-top: 88px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(88px);
+    }
+  }
+
+  &-9-top {
+    margin-top: 64px;
+
+    @include vp-768 {
+      margin-top: 80px;
+    }
+
+    @include vp-1024 {
+      margin-top: 104px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(104px);
+    }
+  }
+
+  &-10-top {
+    margin-top: 64px;
+
+    @include vp-768 {
+      margin-top: 112px;
+    }
+
+    @include vp-1024 {
+      margin-top: 144px;
+    }
+
+    @include vp-1600 {
+      margin-top: size(144px);
+    }
+  }
+
+  &-0-right {
+    margin-right: 8px;
+
+    @include vp-1600 {
+      margin-right: size(8px);
+    }
+  }
+
+  &-1-right {
+    margin-right: 8px;
+
+    @include vp-768 {
+      margin-right: 16px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(16px);
+    }
+  }
+
+  &-2-right {
+    margin-right: 16px;
+
+    @include vp-768 {
+      margin-right: 24px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(24px);
+    }
+  }
+
+  &-3-right {
+    margin-right: 24px;
+
+    @include vp-1024 {
+      margin-right: 32px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(32px);
+    }
+  }
+
+  &-4-right {
+    margin-right: 32px;
+
+    @include vp-768 {
+      margin-right: 40px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(40px);
+    }
+  }
+
+  &-5-right {
+    margin-right: 32px;
+
+    @include vp-768 {
+      margin-right: 40px;
+    }
+
+    @include vp-1024 {
+      margin-right: 48px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(48px);
+    }
+  }
+
+  &-6-right {
+    margin-right: 24px;
+
+    @include vp-768 {
+      margin-right: 40px;
+    }
+
+    @include vp-1024 {
+      margin-right: 64px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(64px);
+    }
+  }
+
+  &-7-right {
+    margin-right: 32px;
+
+    @include vp-768 {
+      margin-right: 56px;
+    }
+
+    @include vp-1024 {
+      margin-right: 88px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(88px);
+    }
+  }
+
+  &-8-right {
+    margin-right: 64px;
+
+    @include vp-1024 {
+      margin-right: 88px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(88px);
+    }
+  }
+
+  &-9-right {
+    margin-right: 64px;
+
+    @include vp-768 {
+      margin-right: 80px;
+    }
+
+    @include vp-1024 {
+      margin-right: 104px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(104px);
+    }
+  }
+
+  &-10-right {
+    margin-right: 64px;
+
+    @include vp-768 {
+      margin-right: 112px;
+    }
+
+    @include vp-1024 {
+      margin-right: 144px;
+    }
+
+    @include vp-1600 {
+      margin-right: size(144px);
+    }
+  }
+
+  &-0-left {
+    margin-left: 8px;
+
+    @include vp-1600 {
+      margin-left: size(8px);
+    }
+  }
+
+  &-1-left {
+    margin-left: 8px;
+
+    @include vp-768 {
+      margin-left: 16px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(16px);
+    }
+  }
+
+  &-2-left {
+    margin-left: 16px;
+
+    @include vp-768 {
+      margin-left: 24px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(24px);
+    }
+  }
+
+  &-3-left {
+    margin-left: 24px;
+
+    @include vp-1024 {
+      margin-left: 32px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(32px);
+    }
+  }
+
+  &-4-left {
+    margin-left: 32px;
+
+    @include vp-768 {
+      margin-left: 40px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(40px);
+    }
+  }
+
+  &-5-left {
+    margin-left: 32px;
+
+    @include vp-768 {
+      margin-left: 40px;
+    }
+
+    @include vp-1024 {
+      margin-left: 48px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(48px);
+    }
+  }
+
+  &-6-left {
+    margin-left: 24px;
+
+    @include vp-768 {
+      margin-left: 40px;
+    }
+
+    @include vp-1024 {
+      margin-left: 64px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(64px);
+    }
+  }
+
+  &-7-left {
+    margin-left: 32px;
+
+    @include vp-768 {
+      margin-left: 56px;
+    }
+
+    @include vp-1024 {
+      margin-left: 88px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(88px);
+    }
+  }
+
+  &-8-left {
+    margin-left: 64px;
+
+    @include vp-1024 {
+      margin-left: 88px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(88px);
+    }
+  }
+
+  &-9-left {
+    margin-left: 64px;
+
+    @include vp-768 {
+      margin-left: 80px;
+    }
+
+    @include vp-1024 {
+      margin-left: 104px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(104px);
+    }
+  }
+
+  &-10-left {
+    margin-left: 64px;
+
+    @include vp-768 {
+      margin-left: 112px;
+    }
+
+    @include vp-1024 {
+      margin-left: 144px;
+    }
+
+    @include vp-1600 {
+      margin-left: size(144px);
+    }
+  }
+}

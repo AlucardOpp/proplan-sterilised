@@ -1,0 +1,17 @@
+mixin intro()
+  section.intro(data-animate)
+    .intro__img
+      .intro__img-exp.fi.d-100
+        +picture("content/intro", "intro-exp-mobile", "png", 375, 224, "ветеринарный эксперт", 1024, 768)
+      .intro__img-food.fi.d-100
+        +picture("content/intro", "intro-food-mobile", "png", 159, 129, "ветеринарный эксперт", 1024, 768)
+    .container
+      .intro__wrapper
+        p.intro__title.fib-20 доверяйте профессиональной экспертизе<br>
+        h1.intro__span.fib-20.d-50 здоровье стерилизованной кошки
+        p.intro__text.fib-20-op.d-100 PRO PLAN® совместно с&nbsp;ветеринарным экспертом<br> Лемарой Войтовой расскажет о поддержке здоровья кошки до&nbsp;и&nbsp;после стерилизации, а&nbsp;также поможет подобрать рацион, учитывающий особые потребности стерилизованных кошек.
+        a(data-move-to="#id-more" aria-label="узнать подробнее").intro__more.btn.btn--gold.paragraph.paragraph-3.paragraph-3-caps.fib-20.d-150.js-trigger узнать подробнее
+        .intro__sing.fib-20.d-300
+          p.intro__sing-name Лемара Войтова
+          p.intro__sing-about ветеринарный эксперт, кандидат ветеринарных наук
+

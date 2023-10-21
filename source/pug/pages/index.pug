@@ -1,0 +1,42 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Стерилизация кошки: научный подход от эксперта Proplan.ru" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = "index" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    //- на странице запрещен "голый" код
+    //- все блоки вставляются из папки pug/components/blocks
+    +intro()
+    +guide()
+    +rations(rationsList)
+    +choose()
+    +map-iframe()
+    +articles(articlesCard)
+    +partners(partnersList)
+
+block modals
+  +modal("modal--video")(data-modal="video")
+    +modal-video()
+  +modal-check-list("modal--check-list")(data-modal="check-list1")
+    +difference()
+  +modal-check-list("modal--check-list")(data-modal="check-list2")
+    +preparation()
+  +modal-check-list("modal--check-list")(data-modal="check-list3")
+    +conditions()
+  +modal-check-list("modal--check-list")(data-modal="check-list4")
+    +attentions()
+  +modal-check-list("modal--check-list")(data-modal="check-list5")
+    +examination()
+  +modal-check-list("modal--check-list")(data-modal="check-list6")
+    +anxiety()
+  +modal-check-list("modal--check-list")(data-modal="check-list7")
+    +select()
+
+

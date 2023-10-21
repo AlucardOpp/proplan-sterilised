@@ -1,0 +1,151 @@
+.map-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: calc(100% - 48px);
+  max-width: 295px;
+  padding: 24px 50px 24px 24px;
+
+  background-color: $color-nero;
+  transform: translate(-50%, -50%);
+
+  @include vp-768 {
+    max-width: 330px;
+    padding: 24px 60px 32px 24px;
+  }
+
+  @include vp-1024 {
+    max-width: size(354px);
+    padding: size(32px) size(64px) size(32px) size(32px);
+  }
+
+  &__title {
+    margin: 0 0 size(8px) 0;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+
+    background: $gold-gradient;
+    -webkit-background-clip: text;
+
+    @include vp-768 {
+      font-size: size(24px);
+      line-height: 140%;
+    }
+
+    -webkit-text-fill-color: $color-transparent;
+  }
+
+  &__address {
+    color: rgba($color-default-white, 0.5);
+    font-style: normal;
+    font-size: 12px;
+    line-height: 130%;
+    font-weight: 400;
+    margin-bottom: 16px;
+
+    @include vp-768 {
+      margin-bottom: 16px;
+      font-size: size(14px);
+    }
+
+    @include vp-1024 {
+      margin-bottom: size(24px);
+    }
+  }
+
+  &__link {
+    white-space: nowrap;
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0 0 3px 12px;
+    line-height: 130%;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    color: $color-default-white;
+
+    @include vp-768 {
+      font-size: size(14px);
+    }
+
+    transition: opacity $trans-default;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 55%;
+      left: 0;
+      transform: translateY(-50%);
+      width: size(4px);
+      height: size(4px);
+      border-radius: 50%;
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 12px;
+      width: calc(100% - 12px);
+      height: 1px;
+      background-color: $color-default-white;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: size(30px);
+    height: size(30px);
+    padding: 0;
+
+    background-color: $color-transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: opacity $trans-default;
+
+    svg {
+      width: size(16px);
+      height: size(16px);
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.4;
+      }
+    }
+
+    @include vp-768 {
+      top: 16px;
+      right: 16px;
+    }
+
+    @include vp-1024 {
+      top: size(24px);
+      right: size(24px);
+    }
+  }
+}

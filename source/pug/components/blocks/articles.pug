@@ -1,0 +1,28 @@
+mixin articles(data)
+  section.articles(data-animate data-animate-height="90")
+    .container
+      .articles__wrapper
+        .articles__img
+          +picture("content/articles", "articles-cat-mobile", "png", 325, 310, "ветеринарный эксперт", 1024, 768)
+        .articles__head
+          h2.articles__header.fib-20.d-200 Узнайте больше о&nbsp;потребностях стерилизованных кошек
+
+        .articles__swiper
+          .articles__container.swiper
+            .articles__slides.swiper-wrapper
+              each item in data
+                .articles__slide.swiper-slide
+                  a.articles__card(href!= item.href target="_blank" data-article=item.text)
+                    h3.articles__card-text!= item.text
+                    .articles__card-items
+                      p.articles__card-text-time!= item.time
+                      span.articles__card-more-btn
+                        span.articles__card-more-btn-include
+                          span.articles__card-plus.articles__card-plus--default
+                          span.articles__card-plus.articles__card-plus--active
+          .articles__slider-buttons
+
+            .articles__slider-button.articles__slider-button--left.swiper-button-prev
+            .articles__slider-button.articles__slider-button--right.swiper-button-next
+
+

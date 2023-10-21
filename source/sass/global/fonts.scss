@@ -1,0 +1,32 @@
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "Rouble";
+
+//   font-display: swap;
+//   src:
+//     url("../fonts/rouble.woff2") format("woff2"),
+//     url("../fonts/rouble.woff") format("woff");
+// }
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Avenir Next Cyr";
+
+  font-display: swap;
+  src:
+    url("../fonts/AvenirNextCyr-Light.woff2") format("woff2"),
+    url("../fonts/AvenirNextCyr-Light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Avenir Next Cyr";
+
+  font-display: swap;
+  src:
+    url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"),
+    url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
+}

@@ -1,0 +1,38 @@
+mixin preparation()
+  .preparation.modal-check-list__container
+    p.preparation__title.modal-check-list__title.title.title-3.mg-4-bottom!="Какие обследования <br> и&nbsp;анализы нужны перед операцией"
+    ul.preparation__list.definition-list
+      li.definition-list__item
+        span.definition-list__title.paragraph.paragraph-1.paragraph-1-low.mg-0-bottom!="Кастрация и&nbsp;стерилизация проводятся только под глубоким наркозом."
+        p.definition-list__text.paragraph.paragraph-3.paragraph-3-low!="Поэтому всем кошкам важно пройти комплексное обследование, чтобы избежать осложнений."
+    p.modal-check-list__subtitle.paragraph.paragraph-1.paragraph-1-low.mg-1-bottom!="Перед операцией рекомендуется:"
+    .modal-check-list__markers
+      ul.marker-list
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Пройти осмотр врача."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Пройти эхокардиографическое обследование."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Натощак сдать общий и&nbsp;биохимический <br> анализ крови."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Убрать воду за&nbsp;2&nbsp;часа до&nbsp;операции, а&nbsp;корм <br> &nbsp;&mdash; за&nbsp;8-10 часов."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+      ul.marker-list
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Сдать клинический анализ мочи."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Минимум за&nbsp;две недели до&nbsp;операции привить кошку ежегодной комплексной вакциной и&nbsp;пройти профилактику от&nbsp;паразитов."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+    .modal-check-list__btn-container
+      +btn({text: "скачать информацию в pdf", href: "#"})(download target="_blank" data-name="").modal-check-list__download-button.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-5-top.mg-2-bottom
+

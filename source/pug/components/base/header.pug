@@ -1,0 +1,40 @@
+mixin header(headerMods, currentPage)
+
+  header.header(class=headerMods)
+    .container
+      a.header__logo(href="index.html", aria-label="Переход на главную")
+        +picture("content", "header-logo", "png", 122, 48, "Purina Pro Plan")
+      nav.main-nav
+        .main-nav__wrapper
+          .main-nav__mobile-active
+            span.main-nav__link Подобрать рацион
+          .main-nav__items
+            ul.main-nav__list
+              li.main-nav__item.main-nav__item--active
+                a.main-nav__link.main-nav__link--choose(data-move-to="#id-choose") Подобрать рацион
+              li.main-nav__item
+                a.main-nav__link(data-move-to="#id-more") Забота о стерилизованной кошке
+              li.main-nav__item
+                a.main-nav__link(data-move-to="#id-rations") Широкая линейка рационов
+              li.main-nav__item
+                a.main-nav__link(href="https://www.proplan.ru/" target="_blank") Главная страница PRO PLAN®
+            .main-nav__footer
+              .main-nav__socials
+                ul.main-nav__socials-list
+                  li.main-nav__socials-item
+                    a.main-nav__socials-link(href="https://vk.com/purina_proplan_group" target="_blank")
+                      +icon("icon-vk", 17, 11)
+              .main-nav__contacts
+                .main-nav__contacts-top
+                  p.main-nav__contacts-header Бесплатная горячая линия Purina
+                  p.main-nav__contacts-text Получить бесплатную консультацию ветеринарного врача с понедельника по пятницу с 9:00 до 18:00
+                .main-nav__contacts-bottom
+                  ul.main-nav__contacts-list
+                    li.main-nav__contacts-item
+                      a.main-nav__contacts-link(href="tel:+78002008900") 8 800 200 89 00
+                    li.main-nav__contacts-item
+                      a.main-nav__contacts-link(href="https://wa.me/79160001070" target="_blank") Чат с Линией заботы Purina
+
+        button.main-nav__toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          +icon("icon-burger", 32, 32)
+          +icon("icon-close", 32, 32)

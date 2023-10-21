@@ -1,0 +1,34 @@
+.difference {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.difference__list {
+  margin-bottom: 32px;
+  margin-top: -19px;
+
+  & .definition-list__item {
+    margin-top: 19px;
+
+    @include vp-768 {
+      margin-top: 24px;
+    }
+
+    @include vp-1024 {
+      margin-top: 0;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include vp-768 {
+    margin-bottom: 40px;
+  }
+
+  @include vp-1600 {
+    margin-bottom: size(40px);
+  }
+}

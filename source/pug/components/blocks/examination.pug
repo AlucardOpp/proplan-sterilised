@@ -1,0 +1,68 @@
+mixin examination()
+  .examination.modal-check-list__container
+    p.modal-check-list__title.title.title-3.mg-4-bottom!="Как часто нужно показывать <br> кошку врачу: чек-лист диспансеризации"
+    ul.suggestion-list
+      li.suggestion-list__item
+        p.suggestion-list__term.paragraph.paragraph-1.paragraph-1-low!="Для безопасности кошки в&nbsp;течение всей жизни после стерилизации важно:"
+        ul.suggestion-list__markers.marker-list.mg-0-top
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Каждый год ее&nbsp;вакцинировать;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Вовремя выводить внешних и&nbsp;внутренних паразитов;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Строго следить за&nbsp;питанием, чтобы не&nbsp;допустить ожирения и&nbsp;его последствий;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Следить, чтобы в&nbsp;доступе всегда была свежая питьевая вода;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+      li.suggestion-list__item.suggestion-list__item--hidden
+        p.suggestion-list__term.paragraph.paragraph-1.paragraph-1-low!="Кошку нужно ежегодно показывать <br> ветеринарному эксперту, чтобы:"
+        ul.suggestion-list__markers.marker-list.mg-0-top
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Натощак сдать клинический анализ и&nbsp;биохимию крови;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Сдать клинический анализ мочи;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Осмотреть состояние ротовой полости;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Оценить состояние тела, вес, мышечную массу, возможное <br> обезвоживание и&nbsp;проявления болевого синдрома;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="&laquo;Послушать&raquo; органы грудной полости;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+      li.suggestion-list__item
+        p.suggestion-list__term.suggestion-list__term--small-limitation.paragraph.paragraph-1.paragraph-1-low!="Кошку старше 10&nbsp;лет нужно осматривать каждые 6&nbsp;месяцев:"
+        ul.suggestion-list__markers.marker-list.mg-0-top
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Измерять артериальное давление;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term!="Сдавать клинический анализ и&nbsp;биохимию крови;"
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+      li.suggestion-list__item
+        p.suggestion-list__term.paragraph.paragraph-1.paragraph-1-low!="Кошке старше 7-8 лет нужно:"
+        ul.suggestion-list__markers.marker-list.mg-0-top
+          li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+            p.marker-list__term.marker-list__term--small-limitation!="Раз в&nbsp;год сдавать натощак кровь на&nbsp;Т4&nbsp;общий, чтобы проверить работу щитовидной <br> железы."
+            span.marker-list__marker
+              +icon("icon-circle-marker", 12, 12)
+    .examination__advice.paragraph.paragraph-1.paragraph-1-low.mg-2-top!="Все дополнительные исследования назначает ваш ветеринарный эксперт."
+    .modal-check-list__btn-container
+      +btn({text: "скачать информацию в pdf", href: "#"})(download target="_blank" data-name="").modal-check-list__download-button.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-5-top.mg-2-bottom
+

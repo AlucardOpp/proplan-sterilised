@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include vp-375 {
+    padding: 0 24px;
+  }
+
+  @include vp-768 {
+    padding: 0 40px;
+  }
+
+  @include vp-1024 {
+    padding: 0 36px;
+  }
+
+  @include vp-1440 {
+    padding: 0 80px;
+  }
+
+  @include vp-1600 {
+    max-width: size-desktop(1600px);
+    padding: 0 size(80px);
+  }
+}

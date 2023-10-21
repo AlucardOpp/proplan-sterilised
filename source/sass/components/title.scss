@@ -1,0 +1,67 @@
+.title {
+  font-weight: 300;
+  margin: 0;
+
+  &-1 {
+    font-size: 28px;
+    line-height: 110%;
+
+    @include vp-768 {
+      font-size: 48px;
+    }
+
+    @include vp-1024 {
+      font-size: 48px;
+    }
+
+    @include vp-1600 {
+      font-size: size(48px);
+    }
+
+    &-caps {
+      font-size: 26px;
+      line-height: 120%;
+      text-transform: uppercase;
+    }
+  }
+
+  &-2 {
+    font-size: 22px;
+    line-height: 110%;
+
+    @include vp-768 {
+      font-size: 32px;
+    }
+
+    @include vp-1024 {
+      font-size: 32px;
+    }
+
+    @include vp-1600 {
+      font-size: size(32px);
+    }
+  }
+
+  &-3 {
+    font-size: 16px;
+    line-height: 120%;
+
+    @include vp-768 {
+      font-size: 24px;
+      line-height: 140%;
+    }
+
+    @include vp-1024 {
+      font-size: 24px;
+      line-height: 140%;
+    }
+
+    @include vp-1600 {
+      font-size: size(24px);
+    }
+
+    &-caps {
+      text-transform: uppercase;
+    }
+  }
+}

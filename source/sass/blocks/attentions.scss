@@ -1,0 +1,92 @@
+.attentions__list {
+  margin-bottom: 16px;
+  row-gap: 19px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include vp-768 {
+    margin-bottom: 24px;
+  }
+
+  @include vp-1024 {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 36px;
+  }
+
+  @include vp-1600 {
+    column-gap: size(36px);
+  }
+}
+
+.attentions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & .modal-check-list__markers {
+    margin-bottom: 34px;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+
+    @include vp-768 {
+      margin-bottom: 40px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(40px);
+    }
+  }
+
+  & .marker-list__term {
+    & br {
+      display: none;
+
+      @include vp-1024 {
+        display: inline;
+        vertical-align: baseline;
+      }
+    }
+  }
+
+  & .attentions__subtitle {
+    margin-bottom: 16px;
+
+    @include vp-768 {
+      margin-bottom: 24px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(24px);
+    }
+  }
+
+  & .marker-list__text {
+    & br {
+      display: none;
+
+      @include vp-1024 {
+        display: inline;
+        vertical-align: baseline;
+      }
+    }
+  }
+
+  &.modal-check-list__container .modal-check-list__title {
+    max-width: 635px;
+
+    @include vp-1024 {
+      margin-bottom: 53px;
+    }
+
+    @include vp-1600 {
+      max-width: size(635px);
+      margin-bottom: size(53px);
+    }
+  }
+}

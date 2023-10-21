@@ -1,0 +1,619 @@
+{
+  "foods": [
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Помогает поддерживать идеальный вес тела благодаря точному балансу белков, жиров и углеводов, с индейкой 200г",
+      "image": "proplan-sterilized-optirenal-cat-trky-200g",
+      "age": "adult",
+      "weight": "200",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-indeykoy-paket-200-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, сочетая все основные питательные вещества, кролик, 200г",
+      "image": "proplan-sterilized-optirenal-cat-rab-200g",
+      "age": "adult",
+      "weight": "200",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-krolikom-paket-200-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIDIGEST",
+      "description": "Поддерживает здоровье стерилизованных кошек с чувствительным пищеварением, курица, 400г",
+      "image": "proplan-sterilized-optidigest-cat-chkn-400g",
+      "age": "adult",
+      "weight": "400",
+      "needs": "digestion",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-chuvstvitelnym-pishchevareniem-s-kuritsey-paket-400-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, сочетая все основные питательные вещества, лосось, 400г",
+      "image": "proplan-sterilized-optirenal-cat-smn-400g",
+      "age": "adult",
+      "weight": "400",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-losos-paket-400-g-2"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISENSES",
+      "description": "Способствует поддержанию органов чувств стерилизованных котов и кошек, лосось, 400г",
+      "image": "proplan-sterilized-optisenses-cat-smn-400g",
+      "age": "adult",
+      "weight": "400",
+      "needs": "sensory",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-dlya-podderzhaniya-organov-chuvstv-s-lososem-paket-400-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, сочетая все основные питательные вещества, индейка,400г",
+      "image": "proplan-sterilized-optirenal-cat-trky-400g",
+      "age": "adult",
+      "weight": "400",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-indejka-paket-400-g-2"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, сочетая все основные питательные вещества, кролик, 400г",
+      "image": "proplan-sterilized-optirenal-cat-rab-400g",
+      "age": "adult",
+      "weight": "400",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-krolik-paket-400-g-2"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED LONGEVIS",
+      "description": "Поддерживает здоровье стерилизованных кошек старше 7 лет благодаря оптимальной калорийности, индейка, 400г",
+      "image": "proplan-sterilized-longevis-cat-trky-400g",
+      "age": "old",
+      "weight": "400",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-starshe-7-let-indejka-paket-400-g-1"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с повышенным содержанием белка, треска и форель , 400г",
+      "image": "proplan-sterilized-optisavour-cat-cod-400g",
+      "age": "adult",
+      "weight": "400",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-treski-i-forelyu-paket-400-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с повышенным содержанием белка, утка и печень, 400г",
+      "image": "proplan-sterilized-optisavour-cat-duck-400g",
+      "age": "adult",
+      "weight": "400",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-utki-i-s-pechenyu-paket-400-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISTART",
+      "description": "Поддерживает здоровый рост и оптимальный вес стерилизованных котят, высокое содержание белка, лосось, 400г",
+      "image": "proplan-sterilized-optistart-cat-smn-400g",
+      "age": "kitten",
+      "weight": "400",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-kotyat-s-vysokim-soderzhaniem-lososya-paket-400-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Поддерживает здоровье стерилизованных кошек и кастрированных котов, пониженный уровень жира, индейка, 1.5кг",
+      "image": "proplan-sterilized-optirenal-cat-turkey1.5kg",
+      "age": "adult",
+      "weight": "1500",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-indejka-paket-1-5-kg-2"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Для поддержания здоровья стерилизованных кошек и кастрированных котов, лосось, пакет 1.5кг",
+      "image": "proplan-sterilized-optirenal-cat-smn1.5kg",
+      "age": "adult",
+      "weight": "1500",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-losos-paket-1-5-kg-2"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISENSES",
+      "description": "Для поддержания органов чувств стерилизованных кошек и кастрированных котов, лосось, пакет 1.5кг",
+      "image": "proplan-sterilized-optisenses-cat-smn1.5kg",
+      "age": "adult",
+      "weight": "1500",
+      "needs": "sensory",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-dlya-podderzhaniya-organov-chuvstv-s-lososem-paket-1-5-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIDIGEST",
+      "description": "Поддерживает здоровье стерилизованных кошек и котов с чувствительным пищеварением, курица, пакет 1.5кг",
+      "image": "proplan-sterilized-optidigest-cat-chkn1.5kg",
+      "age": "adult",
+      "weight": "1500",
+      "needs": "digestion",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-chuvstvitelnym-pishchevareniem-s-kuritsey-paket-1-5-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Для поддержания здоровья стерилизованных кошек и кастрированных котов, кролик, пакет 1.5кг",
+      "image": "proplan-sterilized-optirental-cat-rabbit1.5kg",
+      "age": "adult",
+      "weight": "1500",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-krolikom-paket-1-5-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED LONGEVIS",
+      "description": "Поддерживает здоровье стерилизованных кошек старше 7 лет благодаря оптимальной калорийности, индейка, 1.5кг",
+      "image": "proplan-sterilized-longevis-cat-turkey1.5kg",
+      "age": "old",
+      "weight": "1500",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-starshe-7-let-indejka-paket-1-5-kg-1"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с повышенным содержанием белка, треска и форель, 1.5кг",
+      "image": "proplan-sterilized-optisavour-cat-cod1.5kg",
+      "age": "adult",
+      "weight": "1500",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-treski-i-forelyu-paket-1-5-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с повышенным содержанием белка, утка и печень, 1.5кг",
+      "image": "proplan-sterilized-optisavour-cat-duck1.5kg",
+      "age": "adult",
+      "weight": "1500",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-utki-i-s-pechenyu-paket-1-5-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISTART",
+      "description": "Поддерживает здоровый рост и оптимальный вес стерилизованных котят, высокое содержание белка, лосось, 1.5кг",
+      "image": "proplan-sterilized-optistart-cat-smn1.5kg",
+      "age": "kitten",
+      "weight": "1500",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-kotyat-s-vysokim-soderzhaniem-lososya-paket-1-5-kg"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Для поддержания здоровья почек стерилизованных кошек, высокое содержание белка, утка и печень, 1.5кг + 400г",
+      "image": "proplan-sterilized-pr-cat-duck1.5kg",
+      "age": "adult",
+      "weight": "1900",
+      "promo": "true",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/promopak-suhoy-korm-pro-planr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-utki-i-c-pechenyu-paket-1-5-kg-400-g"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье мочевыделительной системы и почек у кастрированных кошек, кролик, пакет 1.5кг + 400г",
+      "image": "proplan-sterilized-pr-cat-rabbit1.5kg400g",
+      "age": "adult",
+      "weight": "1900",
+      "promo": "true",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/promopak-suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-krolikom-paket-1-5-kg-400-g"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Для поддержания здоровья почек стерилизованных кошек и кастрированных котов, индейка, пакет 1.5кг + 400г",
+      "image": "proplan-sterilized-prl-cat-turkey1.5kg400g",
+      "age": "adult",
+      "weight": "1900",
+      "promo": "true",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-dlya-podderzhaniya-zdorovya-pochek-s-indeykoy-promopaket-1-5-kg-400-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIDIGEST",
+      "description": "Поддерживает здоровье стерилизованных кошек с чувствительным пищеварением, курица, пакет 3кг",
+      "image": "proplan-sterilized-optidigest-cat-chkn-3kg",
+      "age": "adult",
+      "weight": "3000",
+      "needs": "digestion",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-chuvstvitelnym-pishchevareniem-s-kuritsey-paket-3kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Поддерживает здоровье стерилизованных кошек, сочетая все основные питательные вещества, индейка, пакет 3кг",
+      "image": "proplan-sterilized-optirenal-cat-trky-3kg",
+      "age": "adult",
+      "weight": "3000",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-indejka-paket-3-kg-1"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье мочевыделительной системы и почек у стерилизованных кошек, индейка, пакет 2.4кг + 600г",
+      "image": "proplan-sterilized-pr-cat-trky2.4kg600g",
+      "age": "adult",
+      "weight": "3000",
+      "promo": "true",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-indeykoy-paket-3kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Для поддержания здоровья стерилизованных кошек и кастрированных котов, лосось, пакет 3кг",
+      "image": "proplan-sterilized-optirenal-cat-smn-3kg",
+      "age": "adult",
+      "weight": "3000",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-losos-paket-3-kg-1"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISENSES",
+      "description": "Для поддержания органов чувств стерилизованных кошек и кастрированных котов, лосось, пакет 3кг",
+      "image": "proplan-sterilized-optisenses-cat-smn-3kg",
+      "age": "adult",
+      "weight": "3000",
+      "needs": "sensory",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-dlya-podderzhaniya-organov-chuvstv-s-lososem-paket-3-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Для поддержания здоровья стерилизованных кошек и кастрированных котов, кролик, пакет 3кг",
+      "image": "proplan-sterilized-optirenal-cat-rab-3kg",
+      "age": "adult",
+      "weight": "3000",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoj-korm-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-krolik-paket-3-kg-1"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье стерилизованных кошек и кастрированных котов, кролик, пакет 2.4кг + 600г",
+      "image": "proplan-sterilized-pr-cat-rab2.4kg600g",
+      "age": "adult",
+      "weight": "3000",
+      "promo": "true",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-krolikom-paket-3-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с повышенным содержанием белка, треска и форель, 3кг",
+      "image": "proplan-sterilized-optisavour-cat-cod-3kg",
+      "age": "adult",
+      "weight": "3000",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-treski-i-forelyu-paket-3-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с повышенным содержанием белка, утка и печень, 3кг",
+      "image": "proplan-sterilized-optisavour-cat-duck-3kg",
+      "age": "adult",
+      "weight": "3000",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-utki-i-s-pechenyu-paket-3-kg"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с высоким содержанием белка, утка и печень, 2.4кг + 600г",
+      "image": "proplan-sterilized-pr-cat-duck2.4kg600g",
+      "age": "adult",
+      "weight": "3000",
+      "promo": "true",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/promopak-suhoy-korm-pro-planr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-utki-i-c-pechenyu-paket-2-4-kg-600-g"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED LONGEVIS",
+      "description": "Поддерживает здоровье стерилизованных кошек старше 7 лет благодаря оптимальной калорийности, индейка, 3кг",
+      "image": "proplan-sterilized-longevis-cat-trky-3kg",
+      "age": "old",
+      "weight": "3000",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-starshe-7-let-s-indeykoy-paket-3-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISTART",
+      "description": "Поддерживает здоровый рост и оптимальный вес стерилизованных котят, высокое содержание белка, лосось, 3кг",
+      "image": "proplan-sterilized-optistart-cat-smn-3kg",
+      "age": "kitten",
+      "weight": "3000",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-kotyat-s-vysokim-soderzhaniem-lososya-paket-3-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Для поддержания здоровья стерилизованных кошек и кастрированных котов, лосось, пакет 10кг",
+      "image": "proplan-sterilized-optirenal-cat-smn-10kg",
+      "age": "adult",
+      "weight": "10000",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-lososem-paket-10-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED LONGEVIS",
+      "description": "Поддерживает здоровье стерилизованных кошек, сочетая все основные питательные вещества, индейка, пакет 10кг",
+      "image": "proplan-sterilized-longevis-cat-trky-10kg",
+      "age": "old",
+      "weight": "10000",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-indeykoy-paket-10-kg-1"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIDIGEST",
+      "description": "Поддерживает здоровье стерилизованных кошек с чувствительным пищеварением, курица, пакет 10кг",
+      "image": "proplan-sterilized-optidigest-cat-chkn-10kg",
+      "age": "adult",
+      "weight": "10000",
+      "needs": "digestion",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-chuvstvitelnym-pishchevareniem-s-kuritsey-paket-10-kg-1-1"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Поддерживает здоровье стерилизованных кошек, сочетая все основные питательные вещества, индейка, пакет 10кг",
+      "image": "proplan-sterilized-optirenal-cat-trky-10kg",
+      "age": "adult",
+      "weight": "10000",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-indeykoy-paket-10-kg"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье мочевыделительной системы и почек у стерилизованных кошек, индейка, пакет 10кг + 2кг",
+      "image": "proplan-sterilized-optirenal-cat-trky-12kg",
+      "age": "adult",
+      "weight": "12000",
+      "promo": "true",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-indeykoy-promopak-10-2"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTIRENAL",
+      "description": "Для поддержания здоровья стерилизованных кошек и кастрированных котов, кролик, пакет 10кг",
+      "image": "proplan-sterilized-optirenal-cat-rab-10kg",
+      "age": "adult",
+      "weight": "10000",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-krolikom-paket-10-kg"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье стерилизованных кошек, сочетая основные питательные вещества, кролик, пакет 10кг + 2кг",
+      "image": "proplan-sterilized-optirenal-cat-rab-12kg",
+      "age": "adult",
+      "weight": "12000",
+      "promo": "true",
+      "needs": "kidney",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-krolikom-paket-10-2-kg-promo-upakovka"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISENSES",
+      "description": "Для поддержания здоровья стерилизованных кошек и кастрированных котов, лосось, пакет 10кг",
+      "image": "proplan-sterilized-optisenses-cat-smn-10kg",
+      "age": "adult",
+      "weight": "10000",
+      "needs": "sensory",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-lososem-paket-10-kg-1"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с повышенным содержанием белка, треска и форель, 10кг",
+      "image": "proplan-sterilized-optisavour-cat-cod-10kg",
+      "age": "adult",
+      "weight": "10000",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-treski-i-forelyu-paket-10-kg-1"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с высоким содержанием белка, утка и печень, 10кг",
+      "image": "proplan-sterilized-optisavour-cat-duck-10kg",
+      "age": "adult",
+      "weight": "10000",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-utki-i-s-pechenyu-paket-10-kg"
+    },
+    {
+      "title": "ПРОМОПАК СУХОЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье стерилизованных котов и кошек, с высоким содержанием белка, утка и печень, 10кг + 2кг",
+      "image": "proplan-sterilized-optisavour-cat-duck-12kg",
+      "age": "adult",
+      "weight": "12000",
+      "promo": "true",
+      "needs": "picky",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/promopak-suhoy-korm-pro-planr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-vysokim-soderzhaniem-utki-i-c-pechenyu-paket-10-2-kg"
+    },
+    {
+      "title": "СУХОЙ КОРМ PRO PLAN® STERILISED OPTISTART",
+      "description": "Поддерживает здоровый рост и оптимальный вес стерилизованных котят, высокое содержание белка, лосось, 10кг",
+      "image": "proplan-sterilized-optistart-cat-smn-10kg",
+      "age": "kitten",
+      "weight": "10000",
+      "needs": "",
+      "link": "https://shop.purina.ru/koshki/suhie-korma/pro-plan/suhoy-korm-purina-pro-plan-dlya-sterilizovannyh-kotyat-s-vysokim-soderzhaniem-lososya-paket-10-kg"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, курица в соусе, пауч 85г",
+      "image": "proplan-sterilized-cat-chkn85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyy-kotov-s-kuritsey-v-souse-pauch-85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, курица в соусе, коробка, 26x85 г",
+      "image": "proplan-sterilized-cat-chkn26x85g",
+      "age": "adult",
+      "weight": "2210",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyy-kotov-s-kuritsey-v-souse-korobka-26-pauchey-26x85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, говядина в соусе, пауч 85г",
+      "image": "proplan-sterilized-cat-beef85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-okeanicheskoy-ryboy-v-souse-pauch-85-g-1"
+    },
+    {
+      "title": "КОРОБКА ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, говядина в соусе, коробка, 26x85 г",
+      "image": "proplan-sterilized-cat-beef26x85g",
+      "age": "adult",
+      "weight": "2210",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-govyadinoy-v-souse-korobka-26-pauchey-26x85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Полнорационный корм для поддержания здоровья стерилизованных кошек, утка в соусе, пауч 85г",
+      "image": "proplan-sterilized-cat-duck85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-utkoy-v-souse-pauch-85-g"
+    },
+    {
+      "title": "КОРОБКА ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Полнорационный корм для поддержания здоровья стерилизованных кошек, утка в соусе, коробка, 26х85г",
+      "image": "proplan-sterilized-cat-duck26x85g",
+      "age": "adult",
+      "weight": "2210",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-utkoy-v-souse-korobka-26-pauchey-26x85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, индейка в желе, пауч 85г",
+      "image": "proplan-sterilized-cat-trky85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-vkusnye-kusochki-s-indeykoy-v-zhele-pauch-85-g"
+    },
+    {
+      "title": "КОРОБКА ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, индейка в желе, коробка, 26х85г",
+      "image": "proplan-sterilized-cat-trky26x85g",
+      "age": "adult",
+      "weight": "2210",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-vkusnye-kusochki-s-indeykoy-v-zhele-korobka-26-pauchey-26x85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, океаническая рыба в желе, пауч 85г",
+      "image": "proplan-sterilized-cat-fish85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-kusochki-s-okeanicheskoy-ryboy-v-zhele-pauch-85-g"
+    },
+    {
+      "title": "КОРОБКА ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, рыба в желе, коробка, 26х85г",
+      "image": "proplan-sterilized-cat-fish26x85g",
+      "age": "adult",
+      "weight": "2210",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-kusochki-s-okeanicheskoy-ryboy-v-zhele-korobka-26-pauchey-26x85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье взрослых стерилизованных кошек благодаря антиоксидантам, рыба в желе, пауч 85г",
+      "image": "proplan-sterilized-cat-ofish85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-okeanicheskoy-ryboy-v-souse-pauch-85-g"
+    },
+    {
+      "title": "КОРОБКА ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье взрослых стерилизованных кошек благодаря антиоксидантам, рыба в желе, коробка, 26х85г",
+      "image": "proplan-sterilized-cat-ofish26x85g",
+      "age": "adult",
+      "weight": "2210",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/vlazhnyy-korm-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-okeanicheskoy-ryboy-v-souse-korobka-26-pauchey-26x85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье взрослых стерилизованных кошек благодаря антиоксидантам, паштет с треской, пауч 85г",
+      "image": "proplan-sterilized-cat-cod85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/vlazhnyy-korm-pro-planr-nutrisavourr-dlya-vzroslyh-sterilizovannyh-koshek-pashtet-s-treskoy-pauch-85-g"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED LONGEVIS",
+      "description": "Сбалансированное питание и поддержание здоровья стерилизованных кошек старше 7 лет, паштет с индейкой, 85г",
+      "image": "proplan-sterilized-cat-trky85g-longevis",
+      "age": "old",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/vlazhnyy-korm-pro-planr-nutrisavourr-dlya-vzroslyh-sterilizovannyh-koshek-starshe-7-let-pashtet-s-indeykoy-pauch-85-g"
+    },
+    {
+      "title": "МУЛЬТИПАК ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Поддерживает здоровье взрослых стерилизованных кошек, индейка 18шт, рыба 18шт, коробка 36х85г",
+      "image": "proplan-sterilized-cat-mvofish26x85g",
+      "age": "adult",
+      "weight": "3060",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/multipak-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-36h85-g-s-indeykoy-v-zhele-pauch-18h85-g-s-okeanicheskoy-ryboy-v-zhele-pauch-18h85-g"
+    },
+    {
+      "title": "МУЛЬТИПАК ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED NUTRISAVOUR",
+      "description": "Для взрослых стерилизованных кошек, курица 9шт, утка 9шт, говядина 9шт, рыба 9шт, коробка, 36х85г",
+      "image": "proplan-sterilized-cat-mvbeef26x85g",
+      "age": "adult",
+      "weight": "3060",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/multipak-pro-planr-nutri-savourr-dlya-vzroslyh-sterilizovannyh-koshek-i-kastrirovannyh-kotov-36h85-g-s-govyadinoy-v-souse-pauch-9h85-g-s-kuritsey-v-souse-pauch-9h85-g-s-utkoy-v-souse-pauch-9h85-g-s-okeanicheskoy-ryboy-v-souse-pauch-9h85-g"
+    },
+    {
+      "title": "ПРОМОПАК ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, курица и утка в соусе, пауч, 5х85г",
+      "image": "proplan-sterilized-cat-pr5-chkn",
+      "age": "adult",
+      "weight": "425",
+      "promo": "true",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/vlazhnyy-korm-pro-plan-dlya-sterilizovannyh-koshek-s-kuritsey-s-utkoy-v-souse-promopak-4-1"
+    },
+    {
+      "title": "ПРОМОПАК ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, индейка и говядина в желе, пауч, 5х85г",
+      "image": "proplan-sterilized-cat-pr5-beef",
+      "age": "adult",
+      "weight": "425",
+      "promo": "true",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/vlazhnyy-korm-purina-pro-plan-dlya-sterilizovannyh-koshek-s-indeykoy-s-govyadinoy-v-zhele-promopak-4-1"
+    },
+    {
+      "title": "ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Полнорационный паштет для поддержания здоровья стерилизованных кошек и котов, тунец и лосось, банка 85г",
+      "image": "proplan-sterilized-cat-smn85g",
+      "age": "adult",
+      "weight": "85",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/vlazhnyy-korm-pro-planr-dlya-sterilizovannyh-koshek-i-kastrirovannyh-kotov-s-tuntsom-i-lososem-pashtet-banka-85-g"
+    },
+    {
+      "title": "ПРОМОПАК ВЛАЖНЫЙ КОРМ PRO PLAN® STERILISED",
+      "description": "Поддерживает здоровье стерилизованных кошек благодаря антиоксидантам, лосось и тунец, банка, 5х85г",
+      "image": "proplan-sterilized-cat-pr5-tn",
+      "age": "adult",
+      "weight": "425",
+      "promo": "true",
+      "needs": "wet",
+      "link": "https://shop.purina.ru/koshki/konservy/pro-plan/konservy-purina-pro-plan-dlja-sterilizovannyh-koshek-i-kastrirovannyh-kotov-promo-nabor-4-1-losos-i-tunec-banka-85-g"
+    }
+  ]
+}

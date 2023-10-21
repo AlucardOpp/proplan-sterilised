@@ -1,0 +1,593 @@
+.pd {
+  &-0-bottom {
+    padding-bottom: 8px;
+
+    @include vp-1600 {
+      padding-bottom: size(8px);
+    }
+  }
+
+  &-1-bottom {
+    padding-bottom: 8px;
+
+    @include vp-768 {
+      padding-bottom: 16px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(16px);
+    }
+  }
+
+  &-2-bottom {
+    padding-bottom: 16px;
+
+    @include vp-768 {
+      padding-bottom: 24px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(24px);
+    }
+  }
+
+  &-3-bottom {
+    padding-bottom: 24px;
+
+    @include vp-1024 {
+      padding-bottom: 32px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(32px);
+    }
+  }
+
+  &-4-bottom {
+    padding-bottom: 32px;
+
+    @include vp-768 {
+      padding-bottom: 40px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(40px);
+    }
+  }
+
+  &-5-bottom {
+    padding-bottom: 32px;
+
+    @include vp-768 {
+      padding-bottom: 40px;
+    }
+
+    @include vp-1024 {
+      padding-bottom: 48px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(48px);
+    }
+  }
+
+  &-6-bottom {
+    padding-bottom: 24px;
+
+    @include vp-768 {
+      padding-bottom: 40px;
+    }
+
+    @include vp-1024 {
+      padding-bottom: 64px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(64px);
+    }
+  }
+
+  &-7-bottom {
+    padding-bottom: 32px;
+
+    @include vp-768 {
+      padding-bottom: 56px;
+    }
+
+    @include vp-1024 {
+      padding-bottom: 88px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(88px);
+    }
+  }
+
+  &-8-bottom {
+    padding-bottom: 64px;
+
+    @include vp-1024 {
+      padding-bottom: 88px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(88px);
+    }
+  }
+
+  &-9-bottom {
+    padding-bottom: 64px;
+
+    @include vp-768 {
+      padding-bottom: 80px;
+    }
+
+    @include vp-1024 {
+      padding-bottom: 104px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(104px);
+    }
+  }
+
+  &-10-bottom {
+    padding-bottom: 64px;
+
+    @include vp-768 {
+      padding-bottom: 112px;
+    }
+
+    @include vp-1024 {
+      padding-bottom: 144px;
+    }
+
+    @include vp-1600 {
+      padding-bottom: size(144px);
+    }
+  }
+
+  &-0-top {
+    padding-top: 8px;
+
+    @include vp-1600 {
+      padding-top: size(8px);
+    }
+  }
+
+  &-1-top {
+    padding-top: 8px;
+
+    @include vp-768 {
+      padding-top: 16px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(16px);
+    }
+  }
+
+  &-2-top {
+    padding-top: 16px;
+
+    @include vp-768 {
+      padding-top: 24px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(24px);
+    }
+  }
+
+  &-3-top {
+    padding-top: 24px;
+
+    @include vp-1024 {
+      padding-top: 32px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(32px);
+    }
+  }
+
+  &-4-top {
+    padding-top: 32px;
+
+    @include vp-768 {
+      padding-top: 40px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(40px);
+    }
+  }
+
+  &-5-top {
+    padding-top: 32px;
+
+    @include vp-768 {
+      padding-top: 40px;
+    }
+
+    @include vp-1024 {
+      padding-top: 48px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(48px);
+    }
+  }
+
+  &-6-top {
+    padding-top: 24px;
+
+    @include vp-768 {
+      padding-top: 40px;
+    }
+
+    @include vp-1024 {
+      padding-top: 64px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(64px);
+    }
+  }
+
+  &-7-top {
+    padding-top: 32px;
+
+    @include vp-768 {
+      padding-top: 56px;
+    }
+
+    @include vp-1024 {
+      padding-top: 88px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(88px);
+    }
+  }
+
+  &-8-top {
+    padding-top: 64px;
+
+    @include vp-1024 {
+      padding-top: 88px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(88px);
+    }
+  }
+
+  &-9-top {
+    padding-top: 64px;
+
+    // @include vp-768 {
+    //   padding-top: 37px;
+    // }
+
+    @include vp-1024 {
+      padding-top: 104px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(104px);
+    }
+  }
+
+  &-10-top {
+    padding-top: 64px;
+
+    @include vp-768 {
+      padding-top: 63px;
+    }
+
+    @include vp-1024 {
+      padding-top: 144px;
+    }
+
+    @include vp-1600 {
+      padding-top: size(144px);
+    }
+  }
+
+  &-0-right {
+    padding-right: 8px;
+
+    @include vp-1600 {
+      padding-right: size(8px);
+    }
+  }
+
+  &-1-right {
+    padding-right: 8px;
+
+    @include vp-768 {
+      padding-right: 16px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(16px);
+    }
+  }
+
+  &-2-right {
+    padding-right: 16px;
+
+    @include vp-768 {
+      padding-right: 24px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(24px);
+    }
+  }
+
+  &-3-right {
+    padding-right: 24px;
+
+    @include vp-1024 {
+      padding-right: 32px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(32px);
+    }
+  }
+
+  &-4-right {
+    padding-right: 32px;
+
+    @include vp-768 {
+      padding-right: 40px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(40px);
+    }
+  }
+
+  &-5-right {
+    padding-right: 32px;
+
+    @include vp-768 {
+      padding-right: 40px;
+    }
+
+    @include vp-1024 {
+      padding-right: 48px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(48px);
+    }
+  }
+
+  &-6-right {
+    padding-right: 24px;
+
+    @include vp-768 {
+      padding-right: 40px;
+    }
+
+    @include vp-1024 {
+      padding-right: 64px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(64px);
+    }
+  }
+
+  &-7-right {
+    padding-right: 32px;
+
+    @include vp-768 {
+      padding-right: 56px;
+    }
+
+    @include vp-1024 {
+      padding-right: 88px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(88px);
+    }
+  }
+
+  &-8-right {
+    padding-right: 64px;
+
+    @include vp-1024 {
+      padding-right: 88px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(88px);
+    }
+  }
+
+  &-9-right {
+    padding-right: 64px;
+
+    @include vp-768 {
+      padding-right: 80px;
+    }
+
+    @include vp-1024 {
+      padding-right: 104px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(104px);
+    }
+  }
+
+  &-10-right {
+    padding-right: 64px;
+
+    @include vp-768 {
+      padding-right: 112px;
+    }
+
+    @include vp-1024 {
+      padding-right: 144px;
+    }
+
+    @include vp-1600 {
+      padding-right: size(144px);
+    }
+  }
+
+  &-0-left {
+    padding-left: 8px;
+
+    @include vp-1600 {
+      padding-left: size(8px);
+    }
+  }
+
+  &-1-left {
+    padding-left: 8px;
+
+    @include vp-768 {
+      padding-left: 16px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(16px);
+    }
+  }
+
+  &-2-left {
+    padding-left: 16px;
+
+    @include vp-768 {
+      padding-left: 24px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(24px);
+    }
+  }
+
+  &-3-left {
+    padding-left: 24px;
+
+    @include vp-1024 {
+      padding-left: 32px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(32px);
+    }
+  }
+
+  &-4-left {
+    padding-left: 32px;
+
+    @include vp-768 {
+      padding-left: 40px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(40px);
+    }
+  }
+
+  &-5-left {
+    padding-left: 32px;
+
+    @include vp-768 {
+      padding-left: 40px;
+    }
+
+    @include vp-1024 {
+      padding-left: 48px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(48px);
+    }
+  }
+
+  &-6-left {
+    padding-left: 24px;
+
+    @include vp-768 {
+      padding-left: 40px;
+    }
+
+    @include vp-1024 {
+      padding-left: 64px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(64px);
+    }
+  }
+
+  &-7-left {
+    padding-left: 32px;
+
+    @include vp-768 {
+      padding-left: 56px;
+    }
+
+    @include vp-1024 {
+      padding-left: 88px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(88px);
+    }
+  }
+
+  &-8-left {
+    padding-left: 64px;
+
+    @include vp-1024 {
+      padding-left: 88px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(88px);
+    }
+  }
+
+  &-9-left {
+    padding-left: 64px;
+
+    @include vp-768 {
+      padding-left: 80px;
+    }
+
+    @include vp-1024 {
+      padding-left: 104px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(104px);
+    }
+  }
+
+  &-10-left {
+    padding-left: 64px;
+
+    @include vp-768 {
+      padding-left: 112px;
+    }
+
+    @include vp-1024 {
+      padding-left: 144px;
+    }
+
+    @include vp-1600 {
+      padding-left: size(144px);
+    }
+  }
+}

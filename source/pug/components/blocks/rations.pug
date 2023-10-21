@@ -1,0 +1,29 @@
+mixin rations(list)
+  section.rations.pd-9-top.pd-8-bottom(id="id-rations")
+    //- h2.visually-hidden!="Линейка рационов"
+    .rations__wrapper(data-tabs="parent", data-height="max", data-animate, data-animate-height="90")
+      .container
+        .rations__content.mg-4-bottom(data-tabs="content")
+          each item in list
+            .rations__item(data-tabs="element")
+              .rations__image.mg-2-bottom.fi.d-200
+                +picture("content/rations", item.image, "png", 327, 229, item.imageAlt, 1024, 768)
+              .rations__text-wrapper
+                if item.titleh2
+                  h2.rations__title.title.title-2.mg-2-bottom.fib-20.d-200!=item.titleh2
+                else if item.title
+                  h3.rations__title.title.title-2.mg-2-bottom.fib-20.d-200!=item.title
+                p.rations__description.paragraph.paragraph-1.paragraph-1-low.fib-20.d-300!=item.text
+      .rations__controls.fib-20.d-400(data-tabs="controls")
+        .rations__line
+          picture
+            source(media="(min-width:699px)" srcset="img/svg/gold-line-desktop.svg")
+            img(src="img/svg/gold-line.svg" width=1267 height=2 alt="Декоративная линия")
+        .rations__swiper.swiper
+          .rations__swiper-wrapper.swiper-wrapper
+            each item in list
+              button.rations__control(data-tabs="control").swiper-slide
+                .rations__control-img
+                  +icon(item.btnIcon, 80, 80)
+                span.rations__control-name.rations__control-name--mobile.paragraph.paragraph-3.paragraph-3-low!=item.btnText
+                span.rations__control-name.rations__control-name--desktop.paragraph.paragraph-3.paragraph-3-low!=item.desktopText

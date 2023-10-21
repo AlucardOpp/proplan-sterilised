@@ -1,0 +1,471 @@
+.map {
+  &__wrapper {
+    @include vp-1024 {
+      display: grid;
+      align-items: center;
+
+      gap: 40px;
+      gap: 11%;
+      grid-template-columns: 1fr;
+      grid-template-columns: 31.8% 57.2%;
+    }
+  }
+
+  &__text-block {
+    margin-bottom: 40px;
+
+    @include vp-1024 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    background: $gold-gradient;
+    -webkit-background-clip: text;
+
+    @include vp-768 {
+      margin-bottom: 16px;
+    }
+    @include vp-1024 {
+      margin-bottom: size(24px);
+    }
+    -webkit-text-fill-color: $color-transparent;
+  }
+
+  &__description {
+    width: 100%;
+
+    color: $color-default-white;
+
+    @include vp-768 {
+      width: 82%;
+    }
+    @include vp-1024 {
+      width: 100%;
+    }
+  }
+
+  &__interactive-block {
+    position: relative;
+    left: 50%;
+
+    width: 100vw;
+    min-height: size(502px);
+
+    transform: translateX(-50%);
+
+    @include vp-768 {
+      left: 0;
+
+      width: auto;
+      min-height: size(492px);
+
+      transform: none;
+    }
+  }
+
+  &__interactive-map {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba($color-default-black, 0.7);
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &.is-active {
+      &::before {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 48px);
+    max-width: 327px;
+    min-height: 209px;
+    padding: 24px;
+
+    background-color: $color-nero;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility $trans-default, opacity $trans-default;
+
+    @include vp-768 {
+      max-width: 372px;
+      min-height: 218px;
+      padding: 24px;
+    }
+    @include vp-1024 {
+      max-width: size(388px);
+      min-height: size(250px);
+      padding: size(32px);
+    }
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__search-input {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+
+    &:focus-within {
+      .map__search-list-block {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .map__input-wrapper {
+        svg {
+          transform: rotate(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    @include vp-768 {
+      margin-bottom: 13px;
+    }
+    @include vp-1024 {
+      margin-bottom: size(25px);
+    }
+
+    label {
+      align-self: start;
+      margin-bottom: 16px;
+
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 120%;
+      color: $color-default-white;
+
+      cursor: pointer;
+
+      @include vp-768 {
+        margin-bottom: 8px;
+
+        font-size: size(24px);
+        line-height: 140%;
+      }
+      @include vp-1024 {
+        margin-bottom: size(13px);
+      }
+    }
+
+    input {
+      padding: size(16px) size(50px) size(16px) size(24px);
+
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 130%;
+      color: $color-default-white;
+
+      background-color: $color-transparent;
+      border: 1px solid rgba($color-default-white, 0.2);
+      border-radius: size(50px);
+      outline: none;
+
+      transition: border $trans-default;
+
+      @include vp-768 {
+        line-height: 140%;
+      }
+
+      &::placeholder {
+        color: rgba($color-default-white, 0.2);
+      }
+
+      &:hover,
+      &:focus {
+        border: 1px solid $color-default-white;
+      }
+
+      &:hover + svg {
+        opacity: 1;
+      }
+    }
+
+    svg {
+      position: absolute;
+      right: 23px;
+      bottom: 32px;
+
+      display: flex;
+      width: size(22px);
+      height: size(22px);
+
+      transform: rotate(-180deg);
+      opacity: 0.2;
+
+      transition: transform $trans-default, opacity $trans-default;
+
+      pointer-events: none;
+
+      @include vp-768 {
+        right: 25px;
+        bottom: 28px;
+      }
+      @include vp-1024 {
+        right: size(25px);
+        bottom: size(42px);
+      }
+    }
+  }
+
+  &__search-list-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding-right: size(16px);
+
+    background-color: $color-nero;
+    box-shadow: inset 0 0 1px 1px rgba($color-default-white, 0.2);
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility $trans-default, opacity $trans-default;
+
+    @include vp-1024 {
+      bottom: size(8px);
+    }
+  }
+
+  &__search-list {
+    max-height: size(238px);
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+
+    list-style: none;
+
+    &::-webkit-scrollbar {
+      position: absolute;
+      right: 10px;
+
+      width: size(6px);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: size(120px);
+
+      background: rgba($color-default-white, 0.2);
+      border-radius: size(20px);
+    }
+
+    &::-webkit-scrollbar-button:vertical:start:decrement {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-button:vertical:end:increment {
+      display: none;
+    }
+
+    li {
+      padding: size(12px) size(24px);
+
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 140%;
+      color: $color-default-white;
+      white-space: nowrap;
+
+      outline: none;
+      cursor: pointer;
+
+      transition: opacity $trans-default;
+
+      @include vp-1024 {
+        font-size: size(16px);
+      }
+
+      &:first-child {
+        padding: size(16px) size(24px) size(12px) size(24px);
+      }
+
+      &:last-child {
+        padding: size(12px) size(24px) size(16px) size(24px);
+      }
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__search-toggler {
+    position: absolute;
+    right: 24px;
+    bottom: size(-37px);
+
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: $color-default-white;
+    text-transform: uppercase;
+
+    background-color: $color-transparent;
+    border: none;
+    visibility: hidden;
+    cursor: pointer;
+    opacity: 0;
+
+    transition: visibility $trans-default, opacity $trans-default;
+
+    @include vp-768 {
+      right: 0;
+
+      font-size: size(14px);
+    }
+
+    svg {
+      width: size(8px);
+      height: size(8px);
+      margin-left: size(8px);
+    }
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__zoom-controls {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility $trans-default, opacity $trans-default;
+
+    @include vp-768 {
+      right: size(24px);
+    }
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__zoom-btn {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    background-color: $color-nero;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: opacity $trans-default;
+
+    @include vp-768 {
+      width: size(56px);
+      height: size(56px);
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: size(14px);
+      height: 1px;
+
+      background-color: $color-silver;
+      transform: translate(-50%, -50%);
+    }
+
+    &:first-child {
+      margin-bottom: size(16px);
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+}

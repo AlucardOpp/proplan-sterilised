@@ -1,0 +1,66 @@
+mixin attentions()
+  .attentions.modal-check-list__container
+    p.modal-check-list__title.title.title-3.mg-4-bottom!="Как ухаживать за&nbsp;кошкой в&nbsp;первые дни после операции"
+    .modal-check-list__markers.modal-check-list__markers--rows
+      ul.attentions__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term.paragraph.paragraph-1.paragraph-1-low!="Проверяйте места разреза два раза в&nbsp;день"
+          p.marker-list__text.paragraph.paragraph-3.paragraph-3-low.mg-0-top #[span.modal-check-list__hidden.modal-check-list__hidden--mob!="В&nbsp;норме"] не&nbsp;должно быть выделений, запаха, отека или болевого синдрома. #[span.modal-check-list__hidden.modal-check-list__hidden--mob!="Не&nbsp;позволяйте питомцу лизать место разреза и&nbsp;не&nbsp;<br>купайте питомца&nbsp;&mdash; чтобы не&nbsp;занести инфекцию и&nbsp;не&nbsp;повредить швы."]
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term.paragraph.paragraph-1.paragraph-1-low!="Обрабатывайте швы "
+          p.marker-list__text.paragraph.paragraph-3.paragraph-3-low.mg-0-top #[span.modal-check-list__hidden.modal-check-list__hidden--mob!="Следуя всем рекомендациям вашего ветеринарного эксперта."] #[span.modal-check-list__hidden.modal-check-list__hidden--tablet!="По рекомендациям вашего ветеринарного врача."]
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+      ul.attentions__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term.paragraph.paragraph-1.paragraph-1-low #[span.modal-check-list__hidden.modal-check-list__hidden--mob!="Все это время кошка"] #[span.modal-check-list__hidden.modal-check-list__hidden--tablet!="Кошка"] должна носить <br> специальную попону.
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+    p.attentions__subtitle.modal-check-list__subtitle.paragraph.paragraph-1.paragraph-1-low.mg-1-bottom!="Немедленно обратитесь в&nbsp;клинику, если после операции у&nbsp;кота или кошки:"
+    .modal-check-list__markers.modal-check-list__markers--dots
+      ul.marker-list
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Бледные десны"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.modal-check-list__hidden.modal-check-list__hidden--mob.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Депрессия"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Нетвердая походка"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term Нет аппетита или желания попить #[span.modal-check-list__hidden.modal-check-list__hidden--tablet!="воды"] более суток
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term Рвота#[span.modal-check-list__hidden.modal-check-list__hidden--tablet!=", понос или кровь в&nbsp;моче"]
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+      ul.marker-list
+        li.marker-list__item.modal-check-list__hidden.modal-check-list__hidden--mob.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Понос"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Выделения или кровотечение из&nbsp;разреза"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Затрудненное мочеиспускание или дефекация"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.modal-check-list__hidden.modal-check-list__hidden--mob.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Кровь в&nbsp;моче"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Затрудненное дыхание"
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+    .modal-check-list__btn-container
+      +btn({text: "скачать информацию в pdf", href: "#"})(download target="_blank" data-name="").modal-check-list__download-button.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-5-top.mg-2-bottom

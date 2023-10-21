@@ -1,0 +1,18 @@
+mixin partners(list)
+  section.partners(data-animate data-animate-height="90")
+    .container
+      .partners__wrapper
+        .partners__header
+          h2.partners__title.fib-20.d-200 Приобретайте<br>
+            span PRO PLAN® STERILISED
+          p.partners__text.fib-20.d-300 на сайтах партнеров
+        .partners__items.fi.d-200
+          ul.partners__list
+            each item in list
+              li.partners__item
+                a.partners__link(href!= item.href target="_blank" data-partner=item.title)
+                  .partners__svg.partners__svg--color
+                    +icon(item.iconColor.name, item.iconColor.width, item.iconColor.height)
+                  .partners__svg.partners__svg--grey
+                    +icon(item.iconGrey.name, item.iconGrey.width, item.iconGrey.height)
+

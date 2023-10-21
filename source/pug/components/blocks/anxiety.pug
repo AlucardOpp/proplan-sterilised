@@ -1,0 +1,49 @@
+mixin anxiety()
+  .anxiety.modal-check-list__container
+    p.anxiety__title.modal-check-list__title.title.title-3.mg-4-bottom!="Тревожные симптомы: <br> как понять, <br> что со&nbsp;здоровьем кошки что-то не&nbsp;так"
+    .modal-check-list__markers
+      ul.anxiety__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Набор веса"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Если допустить ожирение, оно спровоцирует сахарный диабет, заболевания суставов, почек, сердца и&nbsp;даже некоторые виды рака."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Похудение более чем на&nbsp;10%"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Это может быть первым признаком хронической болезни почек."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Повышенная жажда"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="По&nbsp;своей природе кошки мало пьют. Любые изменения&nbsp;&mdash; повод обратиться к&nbsp;ветеринарному эксперту."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Запор или понос"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Это может быть признаком инфекции, паразитов, обезвоживания и&nbsp;<br>даже <br> прогрессирования хронической болезни почек."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+      ul.anxiety__list.marker-list.marker-list--text
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Проблемы с&nbsp;мочеиспусканием"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Кровь в&nbsp;моче, неудачные попытки сходить в&nbsp;туалет, мочеиспускание частое, болезненное или в&nbsp;неположенном месте."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Многократная рвота"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Это может быть признаком острого отравления, панкреатита или прогрессирования хронической болезни почек."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Проблемы с&nbsp;дыханием"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Если кошка дышит с&nbsp;открытым ртом, а&nbsp;цвет языка при этом поменялся&nbsp;&mdash; важно срочно обратиться в&nbsp;клинику, ведь это может говорить об&nbsp;отеке легких или проблемах с&nbsp;сердцем."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+        li.marker-list__item.paragraph.paragraph-1.paragraph-1-low
+          p.marker-list__term!="Сальный налет, перхоть, частичное облысение"
+          p.marker-list__text.modal-check-list__hidden.modal-check-list__hidden--mob.mg-0-top!="Это может быть связано как с&nbsp;дерматологическими проблемами, так и&nbsp;с&nbsp;эндокринными."
+          span.marker-list__marker
+            +icon("icon-circle-marker", 12, 12)
+    .modal-check-list__btn-container
+      +btn({text: "скачать информацию в pdf", href: "#"})(download target="_blank" data-name="").modal-check-list__download-button.btn--gold.paragraph.paragraph-3.paragraph-3-caps.mg-5-top.mg-2-bottom
+

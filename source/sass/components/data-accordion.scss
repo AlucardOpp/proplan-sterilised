@@ -1,0 +1,8 @@
+[data-accordion="parent"].no-transition [data-accordion="element"] {
+  transition: none;
+}
+
+[data-accordion="element"] {
+  transition: min-height $trans-default;
+  overflow: hidden;
+}

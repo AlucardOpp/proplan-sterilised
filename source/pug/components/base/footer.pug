@@ -1,0 +1,45 @@
+mixin footer(footerMods)
+  footer.footer(class=footerMods)
+    .container
+      .footer__wrapper
+        .footer__left
+          .footer__logo
+            +picture("content", "logo-footer", "png", 187, 80, "Purina Pro Plan")
+          .footer__copyright
+            p Purina 2022 ®Владелец товарных знаков: Société des Produits Nestlé S.A.
+        .footer__center
+          .footer__links
+            ul.footer__links-list
+              li.footer__links-item
+                a.footer__links-link(data-move-to="#id-more" data-text="Забота о стерилизованной кошке")
+                  span Забота о стерилизованной кошке
+              li.footer__links-item
+                a.footer__links-link(data-move-to="#id-rations" data-text="Широкая линейка рационов")
+                  span Широкая линейка рационов
+              li.footer__links-item
+                a.footer__links-link(href="https://www.proplan.ru/" target="_blank" data-text="Главная страница PRO PLAN")
+                  span Главная страница PRO PLAN®
+          .footer__rules
+            ul.footer__rules-list
+              li.footer__rules-item
+                a.footer__rules-link(href="https://www.proplan.ru/privacy_policy.pdf" target="_blank") Политика конфиденциальности
+              li.footer__rules-item
+                a.footer__rules-link(href="https://www.proplan.ru/legal/" target="_blank") Правовая информация
+          .footer__socials
+            ul.footer__socials-list
+              li.footer__socials-item
+                a.footer__socials-link.footer__socials-link--vk(href="https://vk.com/purina_proplan_group" target="_blank" aria-label="vkontakte")
+                  +icon("icon-vk", 17, 11)
+        .footer__right
+          .footer__right-wrap
+            .footer__right-top
+              p.footer__right-header Бесплатная горячая линия Purina
+              p.footer__right-text Получить бесплатную консультацию ветеринарного эксперта с&nbsp;понедельника по&nbsp;пятницу с&nbsp;9:00 до&nbsp;18:00
+            .footer__right-bottom
+              ul.footer__right-list
+                li.footer__right-item
+                  a.footer__right-link(href="tel:+78002008900" data-text="8 800 200 89 00")
+                    span 8 800 200 89 00
+                li.footer__right-item
+                  a.footer__right-link(href="https://t.me/purina_careline_bot" target="_blank" data-text="Чат с Линией заботы Purina")
+                    span Чат с Линией заботы Purina

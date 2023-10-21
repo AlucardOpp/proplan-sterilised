@@ -1,0 +1,50 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & .select__list {
+    row-gap: 17px;
+
+    @include vp-768 {
+      row-gap: 24px;
+    }
+
+    @include vp-1600 {
+      row-gap: size(24px);
+    }
+  }
+
+  & .select__text {
+    margin-bottom: 12px;
+    font-weight: 400;
+
+    @include vp-768 {
+      margin-bottom: 16px;
+      font-weight: 300;
+    }
+
+    @include vp-1024 {
+      max-width: 969px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(16px);
+      max-width: size(969px);
+    }
+  }
+
+  &.modal-check-list__container .modal-check-list__title {
+    @include vp-1024 {
+      margin-bottom: 53px;
+    }
+
+    @include vp-1600 {
+      margin-bottom: size(53px);
+    }
+  }
+}
+
+.select__text {
+  color: $color-default-white;
+}

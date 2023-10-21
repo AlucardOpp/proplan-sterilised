@@ -1,0 +1,42 @@
+.preparation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & .preparation__title {
+    br {
+      display: inline;
+      vertical-align: baseline;
+    }
+  }
+
+  & .marker-list__term {
+    & br {
+      display: none;
+
+      @include vp-1024 {
+        display: inline;
+        vertical-align: baseline;
+      }
+    }
+  }
+}
+
+.preparation__list {
+  margin-bottom: 35px;
+  padding-right: 21px;
+
+  @include vp-768 {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  @include vp-1024 {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  @include vp-1600 {
+    margin-bottom: size(40px);
+  }
+}
